@@ -1,5 +1,5 @@
 import { Auth0Provider } from '@auth0/auth0-react';
-import { authConfig } from './auth/auth0-config';
+import { authConfig } from './src/auth/auth0-config';
 
 const Auth0ProviderWrapper = ({ children }) => {
   return (

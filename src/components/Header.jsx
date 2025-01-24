@@ -7,12 +7,13 @@ import { useAuth0 } from '@auth0/auth0-react';
 const Header = () => {
   const { isOpen, onToggle } = useDisclosure()
   const isMobile = useBreakpointValue({ base: true, md: false })
-  const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0()
+  const { loginWithRedirect, logout, isAuthenticated } = useAuth0()
+ // console.log(user);
 
   return (
     <Box position="sticky" top={0} zIndex={10} bg="teal.500" boxShadow="md">
       <Flex p={5} justify="space-between" align="center">
-        <Heading color="white" size="lg">Rijschool</Heading>
+        <Heading color="white" size="lg">Max Recipe Checker</Heading>
         <HStack spacing={4} display={{ base: 'none', md: 'flex' }}>
           <Button as={Link} to="/" colorScheme="teal" variant="link" color="white">Home</Button>
           <Button as={Link} to="/about" colorScheme="teal" variant="link" color="white">About</Button>

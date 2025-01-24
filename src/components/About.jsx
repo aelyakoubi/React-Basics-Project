@@ -1,6 +1,5 @@
 import { Box, Text, VStack, Button } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import React from 'react';
 
 const About = () => {
   return (
