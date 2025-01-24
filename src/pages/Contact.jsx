@@ -1,6 +1,7 @@
 import { Box, Text, FormControl, FormLabel, Input, Textarea, Button, Container, Center, Heading } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import "../index.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -11,10 +12,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
- // Access values from the .env file
-const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-const userID = import.meta.env.VITE_EMAILJS_USER_ID;
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const userID = import.meta.env.VITE_EMAILJS_USER_ID;
 
     // Send the email using emailjs
     emailjs.sendForm(serviceID, templateID, e.target, userID)

@@ -1,30 +1,35 @@
-import { Center, Heading } from "@chakra-ui/react";
+import { Center, Heading, Flex } from "@chakra-ui/react";
 import { useState } from "react";
 import { RecipeChoice } from "../components/RecipeChoice";
 import { RecipeSearch } from "../components/RecipeSearch";
-import "../recipes.css";
-import "../index.css";
 
 const RecipesPage = () => {
   const [userRecipe, setUserRecipe] = useState();
   const greeting = "Welcome to Max Recipe Checker!";
 
   return (
-    <div className="recipa">
+    <Flex
+      direction="column"
+      align="center"
+      justify="center"
+      minHeight="100vh"
+      width="100%"
+      bg="gray.900"
+      color="white"
+      px={4}
+    >
       {userRecipe ? (
         <RecipeChoice recipe={userRecipe} onClick={setUserRecipe} />
       ) : (
         <>
-          <Heading size="2xl" mb={-30} color="blue.200">
-            <Center h="30vh" flexDir="column">
-              {greeting}
-            </Center>
+          <Heading size="2xl" mb={8} color="blue.200">
+            <Center>{greeting}</Center>
           </Heading>
 
           <RecipeSearch onClick={setUserRecipe} />
         </>
       )}
-    </div>
+    </Flex>
   );
 };
 

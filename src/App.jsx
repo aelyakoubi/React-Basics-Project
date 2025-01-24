@@ -1,4 +1,4 @@
-import { ChakraProvider, Box, Flex } from "@chakra-ui/react";
+import { ChakraProvider, Box, Flex, Center } from "@chakra-ui/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Auth0ProviderWrapper from "../Auth0ProviderWrapper";
 import Header from "./components/Header";
@@ -15,7 +15,8 @@ const App = () => {
         <Router>
           <Flex direction="column" minHeight="100vh">
             <Header />
-            <Box as="main" flex="1">
+            <Box as="main" flex="1" width="100%">
+              {/* Content is centered in each page by using the Center component */}
               <Routes>
                 {/* Set RecipesPage as the default route */}
                 <Route path="/" element={<RecipesPage />} />
