@@ -1,7 +1,6 @@
-import { Box, Text, FormControl, FormLabel, Input, Textarea, Button } from '@chakra-ui/react';
+import { Box, Text, FormControl, FormLabel, Input, Textarea, Button, Container, Center, Heading } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
-
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -12,11 +11,10 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // EmailJS service and template IDs (replace with your own)
-    const serviceID = 'your_service_id';  // Replace with your EmailJS service ID
-    const templateID = 'your_template_id';  // Replace with your template ID
-    const userID = 'your_user_id';  // Replace with your EmailJS User ID
+ // Access values from the .env file
+const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const userID = import.meta.env.VITE_EMAILJS_USER_ID;
 
     // Send the email using emailjs
     emailjs.sendForm(serviceID, templateID, e.target, userID)
@@ -36,42 +34,60 @@ const Contact = () => {
   };
 
   return (
-    <Box p={5}>
-      <Text fontSize="3xl" mb={5}>Contact Us</Text>
-      <form onSubmit={handleSubmit}>
-        <FormControl isRequired mb={4}>
-          <FormLabel>Name</FormLabel>
-          <Input
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            placeholder="Your Name"
-          />
-        </FormControl>
+    <Box minHeight="100vh" display="flex" flexDirection="column">
+      {/* Header */}
+      <Box as="header" bg="teal.500" p={5} boxShadow="md">
+        <Text color="white" fontSize="xl" fontWeight="bold">Max Recipe Checker</Text>
+      </Box>
 
-        <FormControl isRequired mb={4}>
-          <FormLabel>Email</FormLabel>
-          <Input
-            name="email"
-            type="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            placeholder="Your Email"
-          />
-        </FormControl>
+      {/* Centering Form */}
+      <Center flex="1" bg="gray.50" py={8}>
+        <Container maxW="lg" bg="white" p={8} boxShadow="md" borderRadius="md">
+          <Heading as="h2" size="lg" mb={6} textAlign="center">Contact Us</Heading>
+          <form onSubmit={handleSubmit}>
+            <FormControl isRequired mb={4}>
+              <FormLabel>Name</FormLabel>
+              <Input
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                placeholder="Your Name"
+                isRequired
+              />
+            </FormControl>
 
-        <FormControl isRequired mb={4}>
-          <FormLabel>Message</FormLabel>
-          <Textarea
-            name="message"
-            value={formData.message}
-            onChange={handleInputChange}
-            placeholder="Your Message"
-          />
-        </FormControl>
+            <FormControl isRequired mb={4}>
+              <FormLabel>Email</FormLabel>
+              <Input
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                placeholder="Your Email"
+                isRequired
+              />
+            </FormControl>
 
-        <Button type="submit" colorScheme="teal">Send Message</Button>
-      </form>
+            <FormControl isRequired mb={4}>
+              <FormLabel>Message</FormLabel>
+              <Textarea
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                placeholder="Your Message"
+                isRequired
+              />
+            </FormControl>
+
+            <Button type="submit" colorScheme="teal" width="full">Send Message</Button>
+          </form>
+        </Container>
+      </Center>
+
+      {/* Footer */}
+      <Box as="footer" bg="teal.500" p={5} boxShadow="md" mt={5}>
+        <Text color="white" textAlign="center">© {new Date().getFullYear()} Max Recipe Checker. All rights reserved.</Text>
+      </Box>
     </Box>
   );
 };
