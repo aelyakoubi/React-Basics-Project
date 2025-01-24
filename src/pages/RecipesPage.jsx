@@ -10,7 +10,7 @@ const RecipesPage = () => {
   const greeting = "Winc Recipe Checker";
 
   return (
-    <div className="app">
+    <div className="recipa">
       {userRecipe ? (
         <RecipeChoice recipe={userRecipe} onClick={setUserRecipe} />
       ) : (
