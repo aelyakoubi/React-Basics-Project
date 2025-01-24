@@ -5,7 +5,7 @@ import { RecipeSearch } from "../components/RecipeSearch";
 import "../recipes.css";
 import "../index.css";
 
-export const RecipesPage = () => {
+const RecipesPage = () => {
   const [userRecipe, setUserRecipe] = useState();
   const greeting = "Winc Recipe Checker";
 
@@ -27,3 +27,5 @@ export const RecipesPage = () => {
     </div>
   );
 };
+
+export default RecipesPage;

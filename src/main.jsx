@@ -1,12 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { ChakraProvider } from "@chakra-ui/react";
-import { RecipesPage } from "./pages/RecipesPage";
+import App from "./App"; // Import the App component
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ChakraProvider>
-      <RecipesPage />
-    </ChakraProvider>
+    <App /> {/* Rendering the App component which will handle the routes */}
   </React.StrictMode>
 );

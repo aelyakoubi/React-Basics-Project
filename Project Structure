@@ -1,0 +1,27 @@
+/my-project
+  /public
+    index.html
+  /src
+    /components
+      Header.jsx
+      Footer.jsx
+      ContactForm.jsx
+      RecipeChoice.jsx
+      RecipeSearch.jsx
+      RecipeItem.jsx
+      RecipeItems.jsx
+      /ui
+        Button.jsx
+        TextInput.jsx
+    /pages
+      RecipesPage.jsx
+      About.jsx
+      Contact.jsx
+      LoginPage.jsx
+    /App.jsx        // Main App Component for routing
+    /Auth0ProviderWrapper.jsx
+    /index.css      // Global styles
+    /recipes.css    // Recipe-related styles
+    main.jsx         // Entry point that renders App.jsx
+  package.json      // Dependencies and scripts
+  .gitignore        // Git ignore file
