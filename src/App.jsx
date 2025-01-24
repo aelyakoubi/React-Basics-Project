@@ -1,4 +1,4 @@
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, Box, Flex } from "@chakra-ui/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Auth0ProviderWrapper from "../Auth0ProviderWrapper";
 import Header from "./components/Header";
@@ -13,15 +13,19 @@ const App = () => {
     <ChakraProvider>
       <Auth0ProviderWrapper>
         <Router>
-          <Header />
-          <Routes>
-            {/* Set RecipesPage as the default route */}
-            <Route path="/" element={<RecipesPage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/login" element={<LoginPage />} />
-          </Routes>
-          <Footer />
+          <Flex direction="column" minHeight="100vh">
+            <Header />
+            <Box as="main" flex="1">
+              <Routes>
+                {/* Set RecipesPage as the default route */}
+                <Route path="/" element={<RecipesPage />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/login" element={<LoginPage />} />
+              </Routes>
+            </Box>
+            <Footer />
+          </Flex>
         </Router>
       </Auth0ProviderWrapper>
     </ChakraProvider>

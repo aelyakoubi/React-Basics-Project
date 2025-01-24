@@ -15,10 +15,9 @@ const Header = () => {
       <Flex p={5} justify="space-between" align="center">
         <Heading color="white" size="lg">Max Recipe Checker</Heading>
         <HStack spacing={4} display={{ base: 'none', md: 'flex' }}>
-          <Button as={Link} to="/" colorScheme="teal" variant="link" color="white">Home</Button>
-          <Button as={Link} to="/about" colorScheme="teal" variant="link" color="white">About</Button>
-          <Button as={Link} to="/prices" colorScheme="teal" variant="link" color="white">Prices</Button>
-          <Button as={Link} to="/contact" colorScheme="teal" variant="link" color="white">Contact</Button>
+          <Button as={Link} to="/" colorScheme="teal" variant="link" color="pink.200">Home</Button>
+          <Button as={Link} to="/about" colorScheme="teal" variant="link" color="pink.200">About</Button>
+          <Button as={Link} to="/contact" colorScheme="teal" variant="link" color="pink.200">Contact</Button>
 
           {/* Auth0 login/logout button */}
           {isAuthenticated ? (

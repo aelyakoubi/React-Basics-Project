@@ -7,7 +7,7 @@ import "../index.css";
 
 const RecipesPage = () => {
   const [userRecipe, setUserRecipe] = useState();
-  const greeting = "Winc Recipe Checker";
+  const greeting = "Welcome to Max Recipe Checker!";
 
   return (
     <div className="recipa">
