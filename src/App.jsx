@@ -1,7 +1,6 @@
-import React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Auth0ProviderWrapper from "./Auth0ProviderWrapper";
+import Auth0ProviderWrapper from "../Auth0ProviderWrapper";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import RecipesPage from "./pages/RecipesPage"; // Use as homepage

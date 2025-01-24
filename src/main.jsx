@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App"; // Import the App component
+import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App /> {/* Rendering the App component which will handle the routes */}
+    <App /> 
   </React.StrictMode>
 );

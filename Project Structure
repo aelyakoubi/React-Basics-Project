@@ -2,6 +2,8 @@
   /public
     index.html
   /src
+  /assets
+  /auth
     /components
       Header.jsx
       Footer.jsx
@@ -18,6 +20,7 @@
       About.jsx
       Contact.jsx
       LoginPage.jsx
+    /utils
     /App.jsx        // Main App Component for routing
     /Auth0ProviderWrapper.jsx
     /index.css      // Global styles
@@ -25,3 +28,9 @@
     main.jsx         // Entry point that renders App.jsx
   package.json      // Dependencies and scripts
   .gitignore        // Git ignore file
+  .eslintrc.json    // ESLint configuration
+  .prettierrc.json  // Prettier configuration
+  routes.js         // Routes configuration
+  README.md         // Project documentation
+  .env              // Environment variables
+
