@@ -3,39 +3,42 @@ import { Center, Image, Text, Box } from "@chakra-ui/react";
 export const RecipeItem = ({ recipe, onClick }) => {
   return (
     <Center
-      gap={4}
-      cursor="pointer"
+      gap={17}
+      cursor={"pointer"}
       onClick={() => onClick(recipe)}
-      display="flex"
-      ml={4}
-      mb={6}
-      flexDirection="column"
+      display="flexbox"
+      ml={50}
     >
       <Image
         src={recipe.image}
-        alt={recipe.alt || "Recipe Image"}
-        width="100%"
-        maxW="330px"
-        height="auto"
-        objectFit="cover"
-        borderRadius="lg"
-        border="1px solid gray"
+        w={330}
+        h={300}
+        borderWidth={3}
+        alt={recipe.alt}
+        bgColor="none"
+        borderTopRightRadius={"2xl"}
+        borderTopLeftRadius={"2xl"}
       />
       <Box
-        textAlign="center"
-        bg="gray.100"
-        p={4}
-        borderRadius="lg"
-        boxShadow="sm"
-        mt={4}
+        lineHeight={1.9}
+        align="center"
+        bg={"gray.100"}
+        borderBottomLeftRadius={"2xl"}
+        borderBottomRightRadius={"2xl"}
       >
-        <Text fontSize="sm" color="gray.500">{recipe.mealType || "No meal type"}</Text>
-        <Text fontSize="2xl" fontWeight="bold" mt={2}>
-          {recipe.mealType} {recipe.dishType} {/* Removed label */}
+        <div>{recipe.mealType}</div>
+        <Text fontSize={"2xl"} fontWeight={"100"}>
+          <div>{recipe.dishType}</div>
         </Text>
-        <Text fontSize="sm" bg="green.200" p={1} borderRadius="md">{recipe.dietLabels.join(", ")}</Text>
-        <Text fontSize="sm" mt={2}>Dish: {recipe.dishType || "No dish type available"}</Text>
-        <Text fontSize="sm" bg="red.200" p={1} borderRadius="md" mt={2}>Cautions: {recipe.cautions.join(", ")}</Text>
+
+        <Text w={"fit-content"} fontSize={"1xl"} bg="green.200">
+          <div>{recipe.dietLabels}</div>
+        </Text>
+        <div>Dish: {recipe.dishType}</div>
+
+        <Text w={"fit-content"} bg="red.200">
+          <div>Cautions: {recipe.cautions}</div>
+        </Text>
       </Box>
     </Center>
   );
