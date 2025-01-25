@@ -3,42 +3,41 @@ import { Center, Image, Text, Box } from "@chakra-ui/react";
 export const RecipeItem = ({ recipe, onClick }) => {
   return (
     <Center
-      gap={17}
-      cursor={"pointer"}
+      flexDirection="column"
+      gap={4}
+      cursor="pointer"
       onClick={() => onClick(recipe)}
-      display="flexbox"
-      ml={50}
+      w={["90%", "45%", "30%"]} // Adjust width for responsiveness
+      mx="auto" // Centers the content
+      mb={6} // Add margin bottom to space out items
     >
       <Image
         src={recipe.image}
-        w={330}
-        h={300}
-        borderWidth={3}
-        alt={recipe.alt}
-        bgColor="none"
-        borderTopRightRadius={"2xl"}
-        borderTopLeftRadius={"2xl"}
+        alt={recipe.label}
+        w="100%" // Ensure image takes full width of its container
+        h="auto" // Maintain aspect ratio
+        objectFit="cover" // Crop or scale image to fit nicely
+        borderRadius="lg"
+        border="1px solid gray"
       />
       <Box
         lineHeight={1.9}
-        align="center"
-        bg={"gray.100"}
-        borderBottomLeftRadius={"2xl"}
-        borderBottomRightRadius={"2xl"}
+        textAlign="center"
+        bg="gray.100"
+        p={4}
+        borderRadius="lg"
+        boxShadow="md"
       >
-        <div>{recipe.mealType} </div>
-        <Text Text fontSize={"2xl"} fontWeight={"100"}>
-          <div>{recipe.label} </div>
+        <Text fontSize="lg" fontWeight="bold">
+          {recipe.label}
         </Text>
-
-        <Text w={"fit-content"} fontSize={"1xl"} bg="green.200">
-          <div>{recipe.dietLabels}</div>
+        <Text fontSize="sm" color="green.500">
+          {recipe.dietLabels.join(", ")}
         </Text>
-        <div>Dish: {recipe.dishType}</div>
-
-        <Text w={"fit-content"} bg="red.200">
-          <div>Cautions: {recipe.cautions} </div>
+        <Text fontSize="sm" color="red.500">
+          Cautions: {recipe.cautions.join(", ")}
         </Text>
+        <Text fontSize="sm">Dish: {recipe.dishType}</Text>
       </Box>
     </Center>
   );
