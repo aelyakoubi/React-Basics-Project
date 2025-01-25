@@ -35,23 +35,26 @@ Ensure the following are installed on your system:
 
 Navigate to the Project Folder
 Change your working directory to the project folder: cd react-project-starter
+---
 
 Install Dependencies
 Install all required dependencies using: npm install
+---
 
 Run the Development Server
 Start the development server with: npm run dev
+---
 
 Open your browser and navigate to: http://localhost:5173
+---
 
 Build the Project
 To build the project for production, use: npm run build
+---
 
 Demo Video
 Click on the video below to watch a quick demo of this project in action:
-
-............................................................................................................................................................................................................................
-
+---
 
 https://github.com/user-attachments/assets/565f382d-380d-4a36-b01a-8a881e57a3a6
 
