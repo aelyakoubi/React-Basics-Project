@@ -31,7 +31,7 @@ export const RecipeChoice = ({ recipe, onClick }) => {
       <Heading
         fontSize={"1xl"}
         color="gray.300"
-        bg={"orange.100"}
+        bg={"orange.400"}
         lineHeight={1.3}
       >
         {/* Heading text */}
@@ -88,7 +88,7 @@ export const RecipeChoice = ({ recipe, onClick }) => {
         <div>{recipe.ingredientLines}</div>
 
         <Text fontSize="4xl">Health Labels:</Text>
-        <Text w={"fit-content"} bg={"green.300"}>
+        <Text w={"fit-content"} bg={"green.500"}>
           <div>{recipe.healthLabels}</div>
         </Text>
 
@@ -96,7 +96,7 @@ export const RecipeChoice = ({ recipe, onClick }) => {
         <div>{recipe.dietLabels}</div>
 
         <Text fontSize="3xl">Cautions:</Text>
-        <Text w={"fit-content"} bg={"red.100"}>
+        <Text w={"fit-content"} bg={"red.400"}>
           <div>{recipe.cautions}</div>
         </Text>
 
