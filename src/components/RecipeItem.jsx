@@ -22,21 +22,21 @@ export const RecipeItem = ({ recipe, onClick }) => {
       <Box
         lineHeight={1.9}
         align="center"
-        bg={"gray.00"}
+        bg={"gray.100"}
         borderBottomLeftRadius={"2xl"}
         borderBottomRightRadius={"2xl"}
       >
         <div>{recipe.mealType} </div>
-        <Text Text fontSize={"2xl"} fontWeight={"300"}>
+        <Text Text fontSize={"2xl"} fontWeight={"100"}>
           <div>{recipe.label} </div>
         </Text>
 
-        <Text w={"fit-content"} fontSize={"1xl"} bg="green.300">
+        <Text w={"fit-content"} fontSize={"1xl"} bg="green.200">
           <div>{recipe.dietLabels}</div>
         </Text>
         <div>Dish: {recipe.dishType}</div>
 
-        <Text w={"fit-content"} bg="red.300">
+        <Text w={"fit-content"} bg="red.200">
           <div>Cautions: {recipe.cautions} </div>
         </Text>
       </Box>

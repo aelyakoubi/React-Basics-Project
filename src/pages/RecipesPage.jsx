@@ -1,10 +1,10 @@
-import { Center, Heading, Flex } from "@chakra-ui/react";
+import { Flex, Heading, Center } from "@chakra-ui/react";
 import { useState } from "react";
 import { RecipeChoice } from "../components/RecipeChoice";
 import { RecipeSearch } from "../components/RecipeSearch";
 import "../index.css";
 
-const RecipesPage = () => {
+const RecipesPage = ({ recipes }) => {
   const [userRecipe, setUserRecipe] = useState();
   const greeting = "Welcome to Max Recipe Checker!";
 
@@ -28,6 +28,9 @@ const RecipesPage = () => {
           </Heading>
 
           <RecipeSearch onClick={setUserRecipe} />
+
+          {/* Use RecipeItems to render recipe cards */}
+          <RecipeItems recipes={recipes} onClick={setUserRecipe} />
         </>
       )}
     </Flex>
