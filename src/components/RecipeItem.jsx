@@ -26,9 +26,9 @@ export const RecipeItem = ({ recipe, onClick }) => {
         borderBottomLeftRadius={"2xl"}
         borderBottomRightRadius={"2xl"}
       >
-        <div>{recipe.mealType}</div>
+        <div>{recipe.mealType} </div>
         <Text fontSize={"2xl"} fontWeight={"100"}>
-          <div>{recipe.dishType}</div>
+          <div>{recipe.label} </div>
         </Text>
 
         <Text w={"fit-content"} fontSize={"1xl"} bg="green.200">
@@ -37,7 +37,7 @@ export const RecipeItem = ({ recipe, onClick }) => {
         <div>Dish: {recipe.dishType}</div>
 
         <Text w={"fit-content"} bg="red.200">
-          <div>Cautions: {recipe.cautions}</div>
+          <div>Cautions: {recipe.cautions} </div>
         </Text>
       </Box>
     </Center>
