@@ -2,17 +2,13 @@ import { Flex } from "@chakra-ui/react";
 import { RecipeItem } from "./RecipeItem";
 
 export const RecipeItems = ({ recipes, onClick }) => {
-  if (!recipes || recipes.length === 0) {
-    return <Text>No recipes available</Text>; // Added a fallback message
-  }
-
   return (
     <Flex
       gap={16}
-      w={["full", "90%"]}
+      w={["full", "90%"]} // Make it responsive for mobile screens
       flexWrap="wrap"
-      flexDir={["column", "row"]}
-      justify="center" // Center the content horizontally
+      flexDir={["column", "row"]} // Column on mobile, row on larger screens
+      justify="even"
       alignItems="center"
     >
       {recipes.map(({ recipe }) => (
