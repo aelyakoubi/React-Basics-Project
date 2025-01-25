@@ -53,7 +53,7 @@ To build the project for production, use: npm run build
 ---
 
 Demo Video
-- [Watch the full demo on YouTube](https://youtu.be/JpNb4IQZtNA)  
+- [Watch the full demo on YouTube](https://youtu.be/nOPFzUtAkTc)  
 - For a quick preview, click the short demo video file below:  
 ---
 
