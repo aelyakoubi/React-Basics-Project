@@ -9,9 +9,9 @@ const Footer = () => {
        
         <HStack spacing={6}>
         <Text textAlign="center" color="white">&copy; {new Date().getFullYear()} Max Recipe Checker. All rights reserved.</Text>
-          <Button as={Link} to="/" colorScheme="teal" variant="link" color="pink.200">Home</Button>
-          <Button as={Link} to="/About" colorScheme="teal" variant="link" color="pink.200">About</Button>
-          <Button as={Link} to="/Contact" colorScheme="teal" variant="link" color="pink.200">Contact</Button>
+        <Button as={Link} to="/" colorScheme="teal" variant="link" color="pink.100" fontSize="xl">Home</Button>
+          <Button as={Link} to="/about" colorScheme="teal" variant="link" color="pink.100" fontSize="xl">About</Button>
+          <Button as={Link} to="/contact" colorScheme="teal" variant="link" color="pink.100" fontSize="xl">Contact</Button>
         </HStack>
       </Flex>
     </Box>

@@ -2,25 +2,24 @@ import { Box, Text, VStack, Button, Center, Heading } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import "../index.css";
 
-const About = () => {
+const RecipeChecker = () => {
   return (
     <Box p={5}>
       <Center h="100vh" flexDirection="column">
         <Heading size="2xl" mb={5} color="blue.200">
-          About Rijschool
+          Recipe Checker
         </Heading>
         <VStack spacing={5} align="center">
           <Text fontSize="xl" textAlign="center">
-            At Rijschool, we are dedicated to helping you become a confident and skilled driver. Our team of experienced instructors
-            is passionate about teaching you the skills needed to pass your driving test and become a responsible driver on the road.
+            Welcome to our Recipe Checker! Here, you can easily check and manage your recipes. Whether you a novice cook
+            or an experienced chef, we help you ensure your ingredients and instructions are spot on.
           </Text>
           <Text fontSize="lg" textAlign="center">
-            We understand that learning to drive can be stressful, but our approach is designed to make the process as enjoyable
-            and stress-free as possible. We offer flexible scheduling, affordable prices, and personalized lessons that cater to your
-            individual needs and pace.
+            Simply enter your recipe details, and we will verify your ingredients, offer helpful cooking tips, and provide
+            nutritional information to make your cooking experience smoother and more enjoyable.
           </Text>
-          <Button as={Link} to="/contact" colorScheme="teal" size="lg" mt={5}>
-            Contact Us for More Information
+          <Button as={Link} to="/" colorScheme="teal" size="lg" mt={5}>
+            Start Checking Your Recipe
           </Button>
         </VStack>
       </Center>
@@ -28,4 +27,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default RecipeChecker;

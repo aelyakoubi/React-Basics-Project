@@ -1,10 +1,21 @@
 import { Box, Text, FormControl, FormLabel, Input, Textarea, Button, Container, Center, Heading } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useAuth0 } from '@auth0/auth0-react'; // Auth0 hook
+import { useNavigate } from 'react-router-dom'; // Navigate for redirection
 import "../index.css";
 
 const Contact = () => {
+  const { isAuthenticated, loginWithRedirect, logout } = useAuth0(); // Auth0 hook
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+
+  useEffect(() => {
+    // Redirect to login page if not authenticated
+    if (!isAuthenticated) {
+      loginWithRedirect();
+    }
+  }, [isAuthenticated, loginWithRedirect]);
 
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

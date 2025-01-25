@@ -1,4 +1,4 @@
-import { ChakraProvider, Box, Flex, Center } from "@chakra-ui/react";
+import { ChakraProvider, Box, Flex } from "@chakra-ui/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Auth0ProviderWrapper from "../Auth0ProviderWrapper";
 import Header from "./components/Header";

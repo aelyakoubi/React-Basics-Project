@@ -2,6 +2,7 @@ import { Center, Heading, Flex } from "@chakra-ui/react";
 import { useState } from "react";
 import { RecipeChoice } from "../components/RecipeChoice";
 import { RecipeSearch } from "../components/RecipeSearch";
+import "../index.css";
 
 const RecipesPage = () => {
   const [userRecipe, setUserRecipe] = useState();
@@ -14,7 +15,7 @@ const RecipesPage = () => {
       justify="center"
       minHeight="100vh"
       width="100%"
-      bg="gray.900"
+      bg="gray.800"
       color="white"
       px={4}
     >
@@ -22,7 +23,7 @@ const RecipesPage = () => {
         <RecipeChoice recipe={userRecipe} onClick={setUserRecipe} />
       ) : (
         <>
-          <Heading size="2xl" mb={8} color="blue.200">
+          <Heading size="2xl" mb={8} color="blue.300">
             <Center>{greeting}</Center>
           </Heading>
 
