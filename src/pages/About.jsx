@@ -1,6 +1,6 @@
 import { Box, Text, VStack, Button, Center, Heading } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import "../index.css";
+
 
 const RecipeChecker = () => {
   return (
