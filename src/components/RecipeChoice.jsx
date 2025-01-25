@@ -88,7 +88,7 @@ export const RecipeChoice = ({ recipe, onClick }) => {
         <div>{recipe.ingredientLines}</div>
 
         <Text fontSize="4xl">Health Labels:</Text>
-        <Text w={"fit-content"} bg={"green.500"}>
+        <Text w={"fit-content"} bg={"green.300"}>
           <div>{recipe.healthLabels}</div>
         </Text>
 

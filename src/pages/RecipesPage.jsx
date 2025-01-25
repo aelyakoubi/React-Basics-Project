@@ -15,7 +15,7 @@ const RecipesPage = () => {
       minHeight="100vh"
       width="100%"
       bg="white"
-      color="white"
+      color="black"
       px={4}
     >
       {userRecipe ? (

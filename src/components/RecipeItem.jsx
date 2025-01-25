@@ -31,12 +31,12 @@ export const RecipeItem = ({ recipe, onClick }) => {
           <div>{recipe.label} </div>
         </Text>
 
-        <Text w={"fit-content"} fontSize={"2xl"} bg="green.800">
+        <Text w={"fit-content"} fontSize={"2xl"} bg="green.300">
           <div>{recipe.dietLabels}</div>
         </Text>
         <div>Dish: {recipe.dishType}</div>
 
-        <Text w={"fit-content"}fontSize={"2xl"} bg="red.400">
+        <Text w={"fit-content"}fontSize={"2xl"} bg="red.300">
           <div>Cautions: {recipe.cautions} </div>
         </Text>
       </Box>
