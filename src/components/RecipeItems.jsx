@@ -4,12 +4,13 @@ import { RecipeItem } from "./RecipeItem";
 export const RecipeItems = ({ recipes, onClick }) => {
   return (
     <Flex
-      gap={16}
-      w={["full", "90%"]}
+      gap={6}
+      w="full"
       flexWrap="wrap"
-      flexDir={["column", "row"]}
-      justify="even"
-      alignItems="center"
+      justify="center"
+      align="center"
+      p={5}
+      mt={5}
     >
       {recipes.map(({ recipe }) => (
         <RecipeItem key={recipe.label} recipe={recipe} onClick={onClick} />

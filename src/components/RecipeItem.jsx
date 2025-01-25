@@ -1,45 +1,46 @@
-import { Center, Image, Text, Box } from "@chakra-ui/react";
+import { Box, Image, Text, Flex } from "@chakra-ui/react";
 
 export const RecipeItem = ({ recipe, onClick }) => {
   return (
-    <Center
-      gap={17}
-      cursor={"pointer"}
+    <Flex
+      direction="column"
+      w="330px"
+      h="auto"
+      cursor="pointer"
       onClick={() => onClick(recipe)}
-      display="flexbox"
-      ml={50}
+      borderWidth={3}
+      borderRadius="2xl"
+      overflow="hidden"
+      boxShadow="md"
+      transition="transform 0.3s ease"
+      _hover={{ transform: "scale(1.05)" }} // Hover effect for scaling
+      mb={8} // Margin bottom for spacing
     >
       <Image
         src={recipe.image}
-        w={330}
-        h={300}
-        borderWidth={3}
         alt={recipe.alt}
-        bgColor="none"
-        borderTopRightRadius={"2xl"}
-        borderTopLeftRadius={"2xl"}
+        w="100%"
+        h="220px"
+        objectFit="cover"
+        borderBottomRadius="lg"
       />
-      <Box
-        lineHeight={1.9}
-        align="center"
-        bg={"gray.400"}
-        borderBottomLeftRadius={"2xl"}
-        borderBottomRightRadius={"2xl"}
-      >
-        <div>{recipe.mealType} </div>
-        <Text Text fontSize={"2xl"} fontWeight={"100"}>
-          <div>{recipe.label} </div>
+      <Box p={4} bg="white">
+        <Text fontSize="lg" fontWeight="bold" color="teal.500">
+          {recipe.mealType}
         </Text>
-
-        <Text w={"fit-content"} fontSize={"2xl"} bg="green.300">
-          <div>{recipe.dietLabels}</div>
+        <Text fontSize="2xl" fontWeight="600" mt={2}>
+          {recipe.label}
         </Text>
-        <div>Dish: {recipe.dishType}</div>
-
-        <Text w={"fit-content"}fontSize={"2xl"} bg="red.300">
-          <div>Cautions: {recipe.cautions} </div>
+        <Text fontSize="lg" mt={1} bg="green.300" p={1} borderRadius="md" display="inline-block">
+          {recipe.dietLabels}
+        </Text>
+        <Text fontSize="sm" mt={2}>
+          <strong>Dish:</strong> {recipe.dishType}
+        </Text>
+        <Text fontSize="sm" mt={1} bg="red.300" p={1} borderRadius="md" display="inline-block">
+          <strong>Cautions:</strong> {recipe.cautions}
         </Text>
       </Box>
-    </Center>
+    </Flex>
   );
 };

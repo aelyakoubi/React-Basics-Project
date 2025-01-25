@@ -16,13 +16,13 @@ const RecipesPage = () => {
       width="100%"
       bg="white"
       color="black"
-      px={4}
+      px={["2", "4", "8"]} // responsive padding
     >
       {userRecipe ? (
         <RecipeChoice recipe={userRecipe} onClick={setUserRecipe} />
       ) : (
         <>
-          <Heading size="2xl" mb={8} color="blue.200">
+          <Heading size={["xl", "2xl", "3xl"]} mb={8} color="blue.200">
             <Center>{greeting}</Center>
           </Heading>
 

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Auth0ProviderWrapper from "../Auth0ProviderWrapper";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import RecipesPage from "./pages/RecipesPage"; // Use as homepage
+import RecipesPage from "./pages/RecipesPage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import LoginPage from "./pages/LoginPage";
@@ -16,9 +16,7 @@ const App = () => {
           <Flex direction="column" minHeight="100vh">
             <Header />
             <Box as="main" flex="1" width="100%">
-              {/* Content is centered in each page by using the Center component */}
               <Routes>
-                {/* Set RecipesPage as the default route */}
                 <Route path="/" element={<RecipesPage />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
