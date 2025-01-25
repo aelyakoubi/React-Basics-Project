@@ -27,7 +27,7 @@ export const RecipeItem = ({ recipe, onClick }) => {
         borderBottomRightRadius={"2xl"}
       >
         <div>{recipe.mealType} </div>
-        <Text fontSize={"2xl"} fontWeight={"100"}>
+        <Text Text fontSize={"2xl"} fontWeight={"100"}>
           <div>{recipe.label} </div>
         </Text>
 
