@@ -5,9 +5,9 @@ export const RecipeItems = ({ recipes, onClick }) => {
   return (
     <Flex
       gap={16}
-      w={["full", "90%"]} // Make it responsive for mobile screens
+      w={["full", "90%"]}
       flexWrap="wrap"
-      flexDir={["column", "row"]} // Column on mobile, row on larger screens
+      flexDir={["column", "row"]}
       justify="even"
       alignItems="center"
     >
