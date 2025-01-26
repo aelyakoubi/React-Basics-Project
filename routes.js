@@ -1,16 +1,11 @@
-// routes.js
-import Home from './pages/Home';
-import About from './pages/About';
-import Prices from './pages/Prices';
-import Contact from './pages/Contact';
-import Dashboard from './pages/Dashboard';
-import LoginPage from './pages/LoginPage'; // Ensure LoginPage exists
+import Home from './src/pages/Home';
+import About from './src/pages/About';
+import Contact from './src/pages/Contact';
+import LoginPage from './src/pages/LoginPage';
 
-export const routes = [
-  { path: "/", component: <Home /> },
-  { path: "/About", component: <About /> },
-  { path: "/Prices", component: <Prices /> },
-  { path: "/Contact", component: <Contact /> },
-  { path: "/Dashboard", component: <Dashboard /> },
-  { path: "/Login", component: <LoginPage /> },
+export const routesConfig = [
+  { path: "/", component: Home }, // Homepage route, path should be "/"
+  { path: "/about", component: About },
+  { path: "/contact", component: Contact },
+  { path: "/login", component: LoginPage },
 ];

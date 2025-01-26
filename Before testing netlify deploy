@@ -1,0 +1,7 @@
+npm install -g serve
+
+
+serve -s dist
+
+
+http://localhost:3000

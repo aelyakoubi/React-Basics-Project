@@ -16,7 +16,7 @@
         Button.jsx
         TextInput.jsx
     /pages
-      RecipesPage.jsx
+      Home.jsx
       About.jsx
       Contact.jsx
       LoginPage.jsx
@@ -30,7 +30,9 @@
   .gitignore        // Git ignore file
   .eslintrc.json    // ESLint configuration
   .prettierrc.json  // Prettier configuration
-  routes.js         // Routes configuration
+  Routes.js         // Routes configuration
   README.md         // Project documentation
+  Before testing netlify deploy.txt
+  _redirects        // Redirects file for Netlify
   .env              // Environment variables
 

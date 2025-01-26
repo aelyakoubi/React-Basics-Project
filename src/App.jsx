@@ -1,30 +1,22 @@
-import { ChakraProvider, Box, Flex } from "@chakra-ui/react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Auth0ProviderWrapper from "../Auth0ProviderWrapper";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import RecipesPage from "./pages/RecipesPage";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import LoginPage from "./pages/LoginPage";
+import { ChakraProvider } from '@chakra-ui/react';
+import Layout from '../src/Layout';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // React Router
+import { routesConfig } from '../Routes'; // Adjusted import
 
 const App = () => {
   return (
     <ChakraProvider>
       <Auth0ProviderWrapper>
         <Router>
-          <Flex direction="column" minHeight="100vh">
-            <Header />
-            <Box as="main" flex="1" width="100%">
-              <Routes>
-                <Route path="/" element={<RecipesPage />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/login" element={<LoginPage />} />
-              </Routes>
-            </Box>
-            <Footer />
-          </Flex>
+          <Layout>
+            <Routes>
+              {routesConfig.map(({ path, component: Component }, index) => (
+                // Wrap the component in JSX syntax: <Component />
+                <Route key={index} path={path} element={<Component />} />
+              ))}
+            </Routes>
+          </Layout>
         </Router>
       </Auth0ProviderWrapper>
     </ChakraProvider>

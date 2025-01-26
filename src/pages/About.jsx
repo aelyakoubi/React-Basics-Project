@@ -2,7 +2,7 @@ import { Box, Text, VStack, Button, Center, Heading } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 
-const RecipeChecker = () => {
+const About = () => {
   return (
     <Box p={5}>
       <Center h="100vh" flexDirection="column">
@@ -27,4 +27,4 @@ const RecipeChecker = () => {
   );
 };
 
-export default RecipeChecker;
+export default About;
