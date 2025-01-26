@@ -1,8 +1,17 @@
 /my-project
+  /dist
+    / assets
+      index.305f44fa.css
+      index.af450f77.js
+      index.html
+  /node_modules
   /public
-    index.html
+    vite.svg
   /src
   /assets
+   /recipe-images
+      all images
+      react.svg 
   /auth
     /components
       Header.jsx

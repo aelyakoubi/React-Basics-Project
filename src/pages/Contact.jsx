@@ -1,16 +1,15 @@
+// src/pages/Contact.jsx
 import { Box, Text, FormControl, FormLabel, Input, Textarea, Button, Container, Center, Heading, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
 import { useState, useEffect } from 'react';
-import { useAuth0 } from '@auth0/auth0-react'; // Auth0 hook
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useAuth0 } from '@auth0/auth0-react';
+import LogoutButton from '../components/LogoutButton'; 
 
 const Contact = () => {
-  const { isAuthenticated, loginWithRedirect, logout } = useAuth0(); // Auth0 hook
-  const navigate = useNavigate();  // Initialize navigate
+  const { isAuthenticated, loginWithRedirect } = useAuth0(); // Auth0 hook
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Open the modal when the user is not authenticated
   useEffect(() => {
     if (!isAuthenticated) {
       setIsModalOpen(true);
@@ -27,7 +26,6 @@ const Contact = () => {
     const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const userID = import.meta.env.VITE_EMAILJS_USER_ID;
 
-    // Send the email using emailjs
     emailjs.sendForm(serviceID, templateID, e.target, userID)
       .then(
         (result) => {
@@ -40,34 +38,23 @@ const Contact = () => {
         }
       );
 
-    // Reset form after submission
     setFormData({ name: '', email: '', message: '' });
   };
 
-  // Handle login action
   const handleLogin = () => {
-    loginWithRedirect(); // Redirect to Auth0 login
+    loginWithRedirect();
   };
 
-  // Handle logout action and navigate to the homepage ('/')
-  const handleLogout = () => {
-    logout({ returnTo: window.location.origin }); // Log out and redirect to the same page
-    navigate('/'); // Redirect to the homepage after logout
-  };
-
-  // Close the modal if user chooses to login
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
 
   return (
     <Box minHeight="100vh" display="flex" flexDirection="column">
-      {/* Header */}
       <Box as="header" bg="teal.500" p={5} boxShadow="md">
         <Text color="white" fontSize="xl" fontWeight="bold">Max Recipe Checker</Text>
       </Box>
 
-      {/* Centering Form */}
       <Center flex="1" bg="gray.50" py={8}>
         {isAuthenticated ? (
           <Container maxW="lg" bg="white" p={8} boxShadow="md" borderRadius="md">
@@ -110,22 +97,17 @@ const Contact = () => {
               <Button type="submit" colorScheme="teal" width="full">Send Message</Button>
             </form>
 
-            {/* Logout Button */}
-            <Button mt={4} colorScheme="red" onClick={handleLogout}>
-              Log Out
-            </Button>
+            <LogoutButton /> {/* Use the LogoutButton component here */}
           </Container>
         ) : (
           <Text fontSize="lg">Please log in to contact us!</Text>
         )}
       </Center>
 
-      {/* Footer */}
       <Box as="footer" bg="teal.500" p={5} boxShadow="md" mt={5}>
         <Text color="white" textAlign="center">© {new Date().getFullYear()} Max Recipe Checker. All rights reserved.</Text>
       </Box>
 
-      {/* Modal for Login Prompt */}
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
         <ModalOverlay />
         <ModalContent>
@@ -145,4 +127,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

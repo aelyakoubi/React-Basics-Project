@@ -1,11 +1,16 @@
 import { Box, Image, Text, Flex } from "@chakra-ui/react";
 
+// Assuming you have an image import, like this:
+   //import getImage from '../utils/getImage'; // Utility to fetch images
+
 export const RecipeItem = ({ recipe, onClick }) => {
+  // const imageUrl = getImage(recipe.image); // removed because of the error in the console. is for the image url from the API
+  
   return (
     <Flex
       direction="column"
       w="330px"
-      h="auto" // Ensures flexible height for content
+      h="auto"
       cursor="pointer"
       onClick={() => onClick(recipe)}
       borderWidth={3}
@@ -13,8 +18,8 @@ export const RecipeItem = ({ recipe, onClick }) => {
       overflow="hidden"
       boxShadow="md"
       transition="transform 0.3s ease"
-      _hover={{ transform: "scale(1.05)" }} // Hover effect for scaling
-      mb={8} // Margin bottom for spacing
+      _hover={{ transform: "scale(1.05)" }}
+      mb={8}
     >
       <Image
         src={recipe.image}
@@ -28,12 +33,9 @@ export const RecipeItem = ({ recipe, onClick }) => {
         <Text fontSize="lg" fontWeight="bold" color="teal.500">
           {recipe.mealType}
         </Text>
-
-        {/* Title with ellipsis if text overflows */}
         <Text fontSize="1xl" fontWeight="300" mt={2} noOfLines={2} isTruncated>
           {recipe.label}
         </Text>
-
         <Text fontSize="lg" mt={1} bg="green.300" p={1} borderRadius="md" display="inline-block">
           {recipe.dietLabels}
         </Text>
