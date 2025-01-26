@@ -5,7 +5,7 @@ export const RecipeItem = ({ recipe, onClick }) => {
     <Flex
       direction="column"
       w="330px"
-      h="auto"
+      h="auto" // Ensures flexible height for content
       cursor="pointer"
       onClick={() => onClick(recipe)}
       borderWidth={3}
@@ -28,9 +28,12 @@ export const RecipeItem = ({ recipe, onClick }) => {
         <Text fontSize="lg" fontWeight="bold" color="teal.500">
           {recipe.mealType}
         </Text>
-        <Text fontSize="2xl" fontWeight="600" mt={2}>
+
+        {/* Title with ellipsis if text overflows */}
+        <Text fontSize="1xl" fontWeight="300" mt={2} noOfLines={2} isTruncated>
           {recipe.label}
         </Text>
+
         <Text fontSize="lg" mt={1} bg="green.300" p={1} borderRadius="md" display="inline-block">
           {recipe.dietLabels}
         </Text>
