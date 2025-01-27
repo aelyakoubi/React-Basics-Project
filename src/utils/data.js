@@ -7,8 +7,8 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Paleo Chocolate Covered Caramels",
-        "image": "recipe-images/chocolate-caramel.jpg",
-        "url": "https://react-basic-project-a.netlify.app/recipe-images/chocolate-caramel.jpg",
+        "image": "/src/assets/recipe-images/chocolate-caramel.jpeg",
+        "url": "http://ourfineday.com/happy-birthday-travis-and-a-recipe-for-chocolate-covered-chocolates/",
         "yield": 12,
         "dietLabels": [
           "Low-Sodium"
@@ -1568,7 +1568,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Vegan Herb Crackers recipes",
-        "image": "/src/assets/recipe-images/herb-crackers.jpeg",
+        "image": "/src/assets/recipe-images/herb-crackers.jpeg",        
         "url": "https://elanaspantry.com/herb-crackers/",
         "yield": 15,
         "dietLabels": [
