@@ -7,9 +7,8 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Paleo Chocolate Covered Caramels",
-         alt: "Paleo Chocolate Covered Caramels",
-        "image": "recipe-images/chocolate-caramel.jpeg",
-        "url: "https://react-basic-project-a.netlify.app/recipe-images/chocolate-caramel.jpeg",
+        "image": "recipe-images/chocolate-caramel.jpg",
+        "url": "https://react-basic-project-a.netlify.app/recipe-images/chocolate-caramel.jpg",
         "yield": 12,
         "dietLabels": [
           "Low-Sodium"
