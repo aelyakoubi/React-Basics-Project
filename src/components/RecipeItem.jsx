@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-import { Box, Image, Text, Flex } from "@chakra-ui/react";
-
-export const RecipeItem = ({ recipe, onClick }) => {
-
-  
-=======
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 
 export const RecipeItem = ({ recipe, onClick }) => {
@@ -14,7 +7,6 @@ export const RecipeItem = ({ recipe, onClick }) => {
     import.meta.url
   ).href;
 
->>>>>>> e9a79c6ad53e35303b6a738af6627d3108bf3415
   return (
     <Flex
       direction='column'
@@ -31,8 +23,8 @@ export const RecipeItem = ({ recipe, onClick }) => {
       mb={8}
     >
       <Image
-        src={imageUrl} // Use the resolved image URL
-        alt={recipe.alt}
+        src={recipe.image}
+        alt={recipe.label}
         w='100%'
         h='220px'
         objectFit='cover'

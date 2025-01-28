@@ -1,14 +1,14 @@
-import { Flex } from "@chakra-ui/react";
-import { RecipeItem } from "./RecipeItem";
+import { Flex } from '@chakra-ui/react';
+import { RecipeItem } from './RecipeItem';
 
 export const RecipeItems = ({ recipes, onClick }) => {
   return (
     <Flex
       gap={6}
-      w="full"
-      flexWrap="wrap"
-      justify="center"
-      align="center"
+      w='full'
+      flexWrap='wrap'
+      justify='center'
+      align='center'
       p={5}
       mt={5}
     >
