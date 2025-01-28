@@ -1,8 +1,8 @@
-import Auth0ProviderWrapper from "../Auth0ProviderWrapper";
 import { ChakraProvider } from '@chakra-ui/react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'; // React Router
+import Auth0ProviderWrapper from '../Auth0ProviderWrapper';
+import { routesConfig } from '../routes'; // Adjusted import
 import Layout from '../src/Layout';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // React Router
-import { routesConfig } from '../Routes'; // Adjusted import
 
 const App = () => {
   return (
