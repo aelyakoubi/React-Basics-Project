@@ -9,10 +9,10 @@ export const Button = ({ onClick, ...props }) => (
     borderRadius={5}
     border={3}
     p={4}
-    bg="gray.500"
+    bg="gray.400"
     color="yellow.100"
-    fontSize={30}
-    fontWeight="semibold"
+    fontSize={20}
+    fontWeight="bold"
   >
     {props.children}
   </CButton>

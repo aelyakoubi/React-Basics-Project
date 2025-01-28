@@ -4,4 +4,4 @@ npm install -g serve
 serve -s dist
 
 
-http://localhost:3000
+see links in the terminal or use http://localhost:3000

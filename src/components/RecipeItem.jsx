@@ -1,10 +1,7 @@
 import { Box, Image, Text, Flex } from "@chakra-ui/react";
 
-// Assuming you have an image import, like this:
-   //import getImage from '../utils/getImage'; // Utility to fetch images
-
 export const RecipeItem = ({ recipe, onClick }) => {
-  // const imageUrl = getImage(recipe.image); // removed because of the error in the console. is for the image url from the API
+
   
   return (
     <Flex

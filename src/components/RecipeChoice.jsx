@@ -49,14 +49,16 @@ export const RecipeChoice = ({ recipe, onClick }) => {
   borderRadius="md"  
   zIndex={20}        // Keep the button on top of other content
 >
-  <Button
-    onClick={() => onClick()}
-    variant="solid"    
-    color="white"      
-    fontSize="lg"      
-  >
-    Click to Return
-  </Button>
+<Button
+  onClick={() => onClick()}
+  variant="solid"    
+  color="white"      
+  fontSize={{ base: "lg", sm: "xl" }}  // Adjust font size for smaller screens
+  p={{ base: 1, sm: 2 }}                // Adjust padding for smaller screens
+>
+  Click to Return
+</Button>
+
 </Flex>
 
       {/* Recipe Image */}
