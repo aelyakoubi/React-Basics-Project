@@ -24,7 +24,7 @@ export const RecipeItem = ({ recipe, onClick }) => {
     >
       <Image
         src={recipe.image}
-        alt={recipe.label}
+        alt={recipe.url}
         w='100%'
         h='220px'
         objectFit='cover'
