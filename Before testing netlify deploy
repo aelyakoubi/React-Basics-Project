@@ -1,7 +1,0 @@
-npm install -g serve
-
-
-serve -s dist
-
-
-see links in the terminal or use http://localhost:3000

@@ -6,17 +6,17 @@ export const data = JSON.parse(`{
   "hits": [
     {
       "recipe": {
-        "label": "Chocolate Caramels",
-        "image": "/src/assets/recipe-images/chocolate-caramel.jpeg",
-        "url": "https://react-basic-project-a.netlify.app/chocolate-caramel.jpeg",
+        "label": "Paleo Chocolate Covered Caramels",
+        "image": "/recipe-images/chocolate-caramel.jpeg",
+        "url": "http://ourfineday.com/happy-birthday-travis-and-a-recipe-for-chocolate-covered-chocolates/",
         "yield": 12,
         "dietLabels": [
           "Low-Sodium"
         ],
         "healthLabels": [
-          "Vegetarian",
           "Low Potassium",
           "Kidney-Friendly",
+          "Vegetarian",
           "Gluten-Free",
           "Wheat-Free",
           "Egg-Free",
@@ -314,7 +314,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Grilled Pork Chops with Chipotle Sauce",
-        "image": "/src/assets/recipe-images/Grilled-Pork-Chop-with-Chipotle-Sauce.jpeg",
+        "image": "/recipe-images/Grilled-Pork-Chop-with-Chipotle-Sauce.jpeg",
         "url": "https://grumpyshoneybunch.com/2009/07/grilled-pork-chops-chipotle-sauce.html",
         "yield": 8,
         "dietLabels": [
@@ -608,7 +608,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Slow Cooker Turkey Dip Sandwiches recipes",
-        "image": "/src/assets/recipe-images/turkey-sandwich.jpeg",
+        "image": "/recipe-images/turkey-sandwich.jpeg",
         "url": "http://www.bobbiskozykitchen.com/2015/03/slow-cooker-turkey-dip-sandwiches.html",
         "yield": 4,
         "dietLabels": [
@@ -964,7 +964,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Blueberry Basil Margarita Cocktail recipes",
-        "image": "/src/assets/recipe-images/blueberry-margarita.jpeg",
+        "image": "/recipe-images/blueberry-margarita.jpeg",
         "url": "http://drinkwire.liquor.com/post/blueberry-basil-margarita-cocktail-recipe/",
         "yield": 4,
         "dietLabels": [
@@ -1256,8 +1256,344 @@ export const data = JSON.parse(`{
     },
     {
       "recipe": {
+        "label": "Potato Gratin",
+        "image": "/recipe-images/potatoes-gratin.jpeg",
+        "url": "http://www.cookstr.com/recipes/potato-gratin-2",
+        "yield": 12,
+        "dietLabels": [],
+        "healthLabels": [
+          "Sugar-Conscious",
+          "Vegetarian",
+          "Pescatarian",
+          "Gluten-Free",
+          "Wheat-Free",
+          "Egg-Free",
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Soy-Free",
+          "Fish-Free",
+          "Shellfish-Free",
+          "Pork-Free",
+          "Red-Meat-Free",
+          "Crustacean-Free",
+          "Celery-Free",
+          "Mustard-Free",
+          "Sesame-Free",
+          "Lupine-Free",
+          "Mollusk-Free",
+          "Alcohol-Free",
+          "Sulfite-Free",
+          "Kosher"
+        ],
+        "cautions": [],
+        "ingredientLines": [
+          "1 cup milk",
+          "1 cup heavy cream",
+          "2 cups finely sliced leeks, white part only",
+          "1 tablespoon roasted garlic purée (see note)",
+          "1 tablespoon chopped rosemary leaves",
+          "Pinch freshly ground nutmeg",
+          "Coarse salt and freshly ground white pepper to taste",
+          "5 tablespoons unsalted butter, at room temperature",
+          "4 large Yukon Gold potatoes, peeled and cut, crosswise, into 1/8-inch-thick slices"
+        ],
+        "ingredients": [
+          {
+            "text": "1 cup milk",
+            "quantity": 1,
+            "measure": "cup",
+            "food": "milk",
+            "weight": 244,
+            "foodCategory": "Milk",
+            "foodId": "food_b49rs1kaw0jktabzkg2vvanvvsis",
+            "image": "https://www.edamam.com/food-img/7c9/7c9962acf83654a8d98ea6a2ade93735.jpg"
+          },
+          {
+            "text": "1 cup heavy cream",
+            "quantity": 1,
+            "measure": "cup",
+            "food": "heavy cream",
+            "weight": 238,
+            "foodCategory": "Dairy",
+            "foodId": "food_bgtkr21b5v16mca246x9ebnaswyo",
+            "image": "https://www.edamam.com/food-img/484/4848d71f6a14dd5076083f5e17925420.jpg"
+          },
+          {
+            "text": "2 cups finely sliced leeks, white part only",
+            "quantity": 2,
+            "measure": "cup",
+            "food": "leeks",
+            "weight": 178,
+            "foodCategory": "vegetables",
+            "foodId": "food_a27jevnb06c1m9ax7k41xbbcwcuo",
+            "image": "https://www.edamam.com/food-img/4ae/4ae9e09d029a28e0e2c64bdfdbf3f6ae.jpg"
+          },
+          {
+            "text": "1 tablespoon roasted garlic purée (see note)",
+            "quantity": 1,
+            "measure": "tablespoon",
+            "food": "garlic",
+            "weight": 8.499999999856291,
+            "foodCategory": "vegetables",
+            "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+          },
+          {
+            "text": "1 tablespoon chopped rosemary leaves",
+            "quantity": 1,
+            "measure": "tablespoon",
+            "food": "rosemary",
+            "weight": 1.7,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_b6tm2t2blxi7okaeiv91wb8bmygq",
+            "image": "https://www.edamam.com/food-img/0ac/0ac8f7cf6f2d0ad7b1a2f9900fae44f3.jpg"
+          },
+          {
+            "text": "Pinch freshly ground nutmeg",
+            "quantity": 1,
+            "measure": "pinch",
+            "food": "ground nutmeg",
+            "weight": 0.14583333352071937,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_aa8vp2kadkkiiubgpp48fazrqiq2",
+            "image": "https://www.edamam.com/food-img/b9e/b9e54f78ae18cf99a6504b472ba25e7b.jpg"
+          },
+          {
+            "text": "Coarse salt and freshly ground white pepper to taste",
+            "quantity": 0,
+            "measure": null,
+            "food": "Coarse salt",
+            "weight": 13.304075000000262,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "Coarse salt and freshly ground white pepper to taste",
+            "quantity": 0,
+            "measure": null,
+            "food": "white pepper",
+            "weight": 0,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_a443px0bncpqa5avv80p3anrp26k",
+            "image": "https://www.edamam.com/food-img/4f0/4f0e35fe6c042996408b337fb550324a.jpg"
+          },
+          {
+            "text": "5 tablespoons unsalted butter, at room temperature",
+            "quantity": 5,
+            "measure": "tablespoon",
+            "food": "unsalted butter",
+            "weight": 71,
+            "foodCategory": "Dairy",
+            "foodId": "food_awz3iefajbk1fwahq9logahmgltj",
+            "image": "https://www.edamam.com/food-img/713/71397239b670d88c04faa8d05035cab4.jpg"
+          },
+          {
+            "text": "4 large Yukon Gold potatoes, peeled and cut, crosswise, into 1/8-inch-thick slices",
+            "quantity": 4,
+            "measure": "<unit>",
+            "food": "Yukon Gold potatoes",
+            "weight": 1476,
+            "foodCategory": "vegetables",
+            "foodId": "food_abiw5baauresjmb6xpap2bg3otzu",
+            "image": "https://www.edamam.com/food-img/651/6512e82417bce15c2899630c1a2799df.jpg"
+          }
+        ],
+        "calories": 2739.76762500077,
+        "totalWeight": 2229.800431236176,
+        "totalTime": 120,
+        "cuisineType": [
+          "french"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "main course"
+        ],
+        "totalNutrients": {
+          "ENERC_KCAL": {
+            "label": "Energy",
+            "quantity": 2739.76762500077,
+            "unit": "kcal"
+          },
+          "FAT": {
+            "label": "Fat",
+            "quantity": 155.63557208340066,
+            "unit": "g"
+          },
+          "FASAT": {
+            "label": "Saturated",
+            "quantity": 96.38664016671514,
+            "unit": "g"
+          },
+          "FATRN": {
+            "label": "Trans",
+            "quantity": 2.32738,
+            "unit": "g"
+          },
+          "FAMS": {
+            "label": "Monounsaturated",
+            "quantity": 42.400860833339344,
+            "unit": "g"
+          },
+          "FAPU": {
+            "label": "Polyunsaturated",
+            "quantity": 6.873602416666964,
+            "unit": "g"
+          },
+          "CHOCDF": {
+            "label": "Carbs",
+            "quantity": 304.67288125004484,
+            "unit": "g"
+          },
+          "CHOCDF.net": {
+            "label": "Carbohydrates (net)",
+            "quantity": 268.54834791667554,
+            "unit": "g"
+          },
+          "FIBTG": {
+            "label": "Fiber",
+            "quantity": 36.12453333336929,
+            "unit": "g"
+          },
+          "SUGAR": {
+            "label": "Sugars",
+            "quantity": 37.54896041667083,
+            "unit": "g"
+          },
+          "SUGAR.added": {
+            "label": "Sugars, added",
+            "quantity": 0,
+            "unit": "g"
+          },
+          "PROCNT": {
+            "label": "Protein",
+            "quantity": 46.259086666668466,
+            "unit": "g"
+          },
+          "CHOLE": {
+            "label": "Cholesterol",
+            "quantity": 503.11,
+            "unit": "mg"
+          },
+          "NA": {
+            "label": "Sodium",
+            "quantity": 5156.393388500102,
+            "unit": "mg"
+          },
+          "CA": {
+            "label": "Calcium",
+            "quantity": 753.6314368300897,
+            "unit": "mg"
+          },
+          "MG": {
+            "label": "Magnesium",
+            "quantity": 435.86342097933505,
+            "unit": "mg"
+          },
+          "K": {
+            "label": "Potassium",
+            "quantity": 7098.92778449897,
+            "unit": "mg"
+          },
+          "FE": {
+            "label": "Iron",
+            "quantity": 15.712683506415825,
+            "unit": "mg"
+          },
+          "ZN": {
+            "label": "Zinc",
+            "quantity": 6.138100014571826,
+            "unit": "mg"
+          },
+          "P": {
+            "label": "Phosphorus",
+            "quantity": 1287.6176250001793,
+            "unit": "mg"
+          },
+          "VITA_RAE": {
+            "label": "Vitamin A",
+            "quantity": 1726.289291666676,
+            "unit": "µg"
+          },
+          "VITC": {
+            "label": "Vitamin C",
+            "quantity": 316.5869749999608,
+            "unit": "mg"
+          },
+          "THIA": {
+            "label": "Thiamin (B1)",
+            "quantity": 1.4738665833336944,
+            "unit": "mg"
+          },
+          "RIBF": {
+            "label": "Riboflavin (B2)",
+            "quantity": 1.2360371249999487,
+            "unit": "mg"
+          },
+          "NIA": {
+            "label": "Niacin (B3)",
+            "quantity": 16.685738375001428,
+            "unit": "mg"
+          },
+          "VITB6A": {
+            "label": "Vitamin B6",
+            "quantity": 5.0317103333318585,
+            "unit": "mg"
+          },
+          "FOLDFE": {
+            "label": "Folate equivalent (total)",
+            "quantity": 376.14883333347143,
+            "unit": "µg"
+          },
+          "FOLFD": {
+            "label": "Folate (food)",
+            "quantity": 376.14883333347143,
+            "unit": "µg"
+          },
+          "FOLAC": {
+            "label": "Folic acid",
+            "quantity": 0,
+            "unit": "µg"
+          },
+          "VITB12": {
+            "label": "Vitamin B12",
+            "quantity": 1.6471,
+            "unit": "µg"
+          },
+          "VITD": {
+            "label": "Vitamin D",
+            "quantity": 5.9030000000000005,
+            "unit": "µg"
+          },
+          "TOCPHA": {
+            "label": "Vitamin E",
+            "quantity": 6.132799999999884,
+            "unit": "mg"
+          },
+          "VITK1": {
+            "label": "Vitamin K",
+            "quantity": 125.16649999999754,
+            "unit": "µg"
+          },
+          "Sugar.alcohol": {
+            "label": "Sugar alcohol",
+            "quantity": 0,
+            "unit": "g"
+          },
+          "WATER": {
+            "label": "Water",
+            "quantity": 1690.0881846123998,
+            "unit": "g"
+          }
+        }
+      }
+    },
+    {
+      "recipe": {
         "label": "Seafood Casserole",
-        "image": "/src/assets/recipe-images/seafood-casserol.jpeg",
+        "image": "/recipe-images/seafood-casserol.jpeg",
         "url": "http://www.bigoven.com/recipe/Seafood-Casserole/296427",
         "yield": 6,
         "dietLabels": [
@@ -1567,8 +1903,420 @@ export const data = JSON.parse(`{
     },
     {
       "recipe": {
+        "label": "Green coconut curry with salmon",
+        "image": "/recipe-images/coconut-curry-salmon.jpeg",
+        "url": "http://www.aliceincookingland.com/recipe/green-coconut-curry-salmon/",
+        "yield": 18,
+        "dietLabels": [],
+        "healthLabels": [
+          "Sugar-Conscious",
+          "Pescatarian",
+          "Dairy-Free",
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Soy-Free",
+          "Shellfish-Free",
+          "Pork-Free",
+          "Red-Meat-Free",
+          "Celery-Free",
+          "Mustard-Free",
+          "Sesame-Free",
+          "Lupine-Free",
+          "Alcohol-Free",
+          "Sulfite-Free"
+        ],
+        "cautions": [
+          "Tree-Nuts",
+          "Shellfish",
+          "Sulfites",
+          "FODMAP"
+        ],
+        "ingredientLines": [
+          "1 1/2 lb salmon",
+          "1 zuchinni finely chopped",
+          "2 green peppers",
+          "2 cloves garlic diced",
+          "1 lb mushrooms sliced",
+          "2 heads baby bok choy cut into fourths",
+          "3 tsp ginger finely grated",
+          "4 tbsp grapeseed oil",
+          "2 14-oz cans coconut milk",
+          "4 tbsp green curry paste",
+          "2 tbsp fish sauce",
+          "1 lime juiced",
+          "1/2 cup fresh basil chopped",
+          "2 green onions sliced",
+          "1 tsp salt",
+          "1 tsp pepper",
+          "1 package Aisian noodles we used Soba"
+        ],
+        "ingredients": [
+          {
+            "text": "1 1/2 lb salmon",
+            "quantity": 1.5,
+            "measure": "pound",
+            "food": "salmon",
+            "weight": 680.388555,
+            "foodCategory": "seafood",
+            "foodId": "food_bhncugnadgibupafbeeapbislbom",
+            "image": "https://www.edamam.com/food-img/9a0/9a0f38422e9f21dcedbc2dca0d8209ac.jpg"
+          },
+          {
+            "text": "1 zuchinni finely chopped",
+            "quantity": 1,
+            "measure": "<unit>",
+            "food": "zuchinni",
+            "weight": 196,
+            "foodCategory": "vegetables",
+            "foodId": "food_avpihljbuwpd8ibbmahcabaros5s",
+            "image": "https://www.edamam.com/food-img/f63/f637280594e4a731eccc1199194a8847.jpg"
+          },
+          {
+            "text": "2 green peppers",
+            "quantity": 2,
+            "measure": "<unit>",
+            "food": "green peppers",
+            "weight": 232.57777777777778,
+            "foodCategory": "vegetables",
+            "foodId": "food_bz8rcwobbzm7zhb3wh2n7aznivou",
+            "image": "https://www.edamam.com/food-img/629/629dc9fddc1f8aec27fa337dd6ce2b7c.jpg"
+          },
+          {
+            "text": "2 cloves garlic diced",
+            "quantity": 2,
+            "measure": "clove",
+            "food": "garlic",
+            "weight": 6,
+            "foodCategory": "vegetables",
+            "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+          },
+          {
+            "text": "1 lb mushrooms sliced",
+            "quantity": 1,
+            "measure": "pound",
+            "food": "mushrooms",
+            "weight": 453.59237,
+            "foodCategory": "vegetables",
+            "foodId": "food_bvlose6arfl26ra396sjrb7hetqh",
+            "image": "https://www.edamam.com/food-img/d63/d639cf4a2afc7407c1d1ce286028136b.jpg"
+          },
+          {
+            "text": "2 heads baby bok choy cut into fourths",
+            "quantity": 2,
+            "measure": "head",
+            "food": "bok choy",
+            "weight": 151.99999999999983,
+            "foodCategory": "vegetables",
+            "foodId": "food_bq7w3usaxapk30b8utp6lasy79lv",
+            "image": "https://www.edamam.com/food-img/c76/c7698a4dc6baecd186476820b6b91cdc.jpg"
+          },
+          {
+            "text": "3 tsp ginger finely grated",
+            "quantity": 3,
+            "measure": "teaspoon",
+            "food": "ginger",
+            "weight": 6,
+            "foodCategory": "vegetables",
+            "foodId": "food_bi2ki2xb5zmmvbaiwf7ztbgktzp6",
+            "image": "https://www.edamam.com/food-img/b9c/b9c06ef451ef29513880af0a53ebbaa6.jpg"
+          },
+          {
+            "text": "4 tbsp grapeseed oil",
+            "quantity": 4,
+            "measure": "tablespoon",
+            "food": "grapeseed oil",
+            "weight": 54.4,
+            "foodCategory": "Oils",
+            "foodId": "food_br8vwihb5tm7wybd4ppzjaox5089",
+            "image": "https://www.edamam.com/food-img/88b/88bb3399c7bf214d2bce6bd86780eaf2.jpg"
+          },
+          {
+            "text": "2 14-oz cans coconut milk",
+            "quantity": 28,
+            "measure": "ounce",
+            "food": "coconut milk",
+            "weight": 793.7866475000001,
+            "foodCategory": "non-dairy beverages",
+            "foodId": "food_by1k6v2adj7drhbq9w1rpbpen9ms",
+            "image": "https://www.edamam.com/food-img/671/671f7528eadb1b01efb53243d0ef0f80.JPG"
+          },
+          {
+            "text": "4 tbsp green curry paste",
+            "quantity": 4,
+            "measure": "tablespoon",
+            "food": "curry paste",
+            "weight": 64,
+            "foodCategory": "condiments and sauces",
+            "foodId": "food_aojdol2are6zg7af2nincbe87jot",
+            "image": "https://www.edamam.com/food-img/b6a/b6a9ebae5850f42eca0253827603ef9c.jpg"
+          },
+          {
+            "text": "2 tbsp fish sauce",
+            "quantity": 2,
+            "measure": "tablespoon",
+            "food": "fish sauce",
+            "weight": 36,
+            "foodCategory": "canned soup",
+            "foodId": "food_ahlu6u3ab8bu1wap7cbqua3s1quk",
+            "image": "https://www.edamam.com/food-img/7b5/7b58b769d8bf7b79acf12a76b79ea9bc.jpg"
+          },
+          {
+            "text": "1 lime juiced",
+            "quantity": 1,
+            "measure": "<unit>",
+            "food": "lime",
+            "weight": 67,
+            "foodCategory": "fruit",
+            "foodId": "food_av58muyb8kg92fbk0g8g8aui5knv",
+            "image": "https://www.edamam.com/food-img/48a/48a123c9576647c4ada6a41df5eeb22a.jpg"
+          },
+          {
+            "text": "1/2 cup fresh basil chopped",
+            "quantity": 0.5,
+            "measure": "cup",
+            "food": "fresh basil",
+            "weight": 12,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_bfeht3obd58c3gak5ehpibxgbbs6",
+            "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+          },
+          {
+            "text": "2 green onions sliced",
+            "quantity": 2,
+            "measure": "<unit>",
+            "food": "green onions",
+            "weight": 30,
+            "foodCategory": "vegetables",
+            "foodId": "food_bknlkyzbuzo27pb11whr4bttkuy6",
+            "image": "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"
+          },
+          {
+            "text": "1 tsp salt",
+            "quantity": 1,
+            "measure": "teaspoon",
+            "food": "salt",
+            "weight": 6,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "1 tsp pepper",
+            "quantity": 1,
+            "measure": "teaspoon",
+            "food": "pepper",
+            "weight": 2.9,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+            "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+          },
+          {
+            "text": "1 package Aisian noodles we used Soba",
+            "quantity": 1,
+            "measure": "package",
+            "food": "noodles",
+            "weight": 340,
+            "foodCategory": "grains",
+            "foodId": "food_aefg3gqa71nrtpbhjfo3yb36kd81",
+            "image": "https://www.edamam.com/food-img/800/800c9c0d7cef6b5474723682ffa2878d.jpg"
+          }
+        ],
+        "calories": 5112.068417170556,
+        "totalWeight": 3132.645350277778,
+        "totalTime": 0,
+        "cuisineType": [
+          "nordic"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "main course"
+        ],
+        "totalNutrients": {
+          "ENERC_KCAL": {
+            "label": "Energy",
+            "quantity": 5112.068417170556,
+            "unit": "kcal"
+          },
+          "FAT": {
+            "label": "Fat",
+            "quantity": 336.96978048289225,
+            "unit": "g"
+          },
+          "FASAT": {
+            "label": "Saturated",
+            "quantity": 181.28297571055614,
+            "unit": "g"
+          },
+          "FATRN": {
+            "label": "Trans",
+            "quantity": 0.2074,
+            "unit": "g"
+          },
+          "FAMS": {
+            "label": "Monounsaturated",
+            "quantity": 47.68709068526722,
+            "unit": "g"
+          },
+          "FAPU": {
+            "label": "Polyunsaturated",
+            "quantity": 73.26260006699724,
+            "unit": "g"
+          },
+          "CHOCDF": {
+            "label": "Carbs",
+            "quantity": 328.1063749712389,
+            "unit": "g"
+          },
+          "CHOCDF.net": {
+            "label": "Carbohydrates (net)",
+            "quantity": 297.98885939653667,
+            "unit": "g"
+          },
+          "FIBTG": {
+            "label": "Fiber",
+            "quantity": 30.11751557470222,
+            "unit": "g"
+          },
+          "SUGAR": {
+            "label": "Sugars",
+            "quantity": 32.25989848546667,
+            "unit": "g"
+          },
+          "SUGAR.added": {
+            "label": "Sugars, added",
+            "quantity": 0,
+            "unit": "g"
+          },
+          "PROCNT": {
+            "label": "Protein",
+            "quantity": 230.65632545302884,
+            "unit": "g"
+          },
+          "CHOLE": {
+            "label": "Cholesterol",
+            "quantity": 665.70150452552,
+            "unit": "mg"
+          },
+          "NA": {
+            "label": "Sodium",
+            "quantity": 6120.048996514333,
+            "unit": "mg"
+          },
+          "CA": {
+            "label": "Calcium",
+            "quantity": 673.4619165553777,
+            "unit": "mg"
+          },
+          "MG": {
+            "label": "Magnesium",
+            "quantity": 988.5084524161775,
+            "unit": "mg"
+          },
+          "K": {
+            "label": "Potassium",
+            "quantity": 8413.89930292511,
+            "unit": "mg"
+          },
+          "FE": {
+            "label": "Iron",
+            "quantity": 51.18356467470444,
+            "unit": "mg"
+          },
+          "ZN": {
+            "label": "Zinc",
+            "quantity": 18.335398636711112,
+            "unit": "mg"
+          },
+          "P": {
+            "label": "Phosphorus",
+            "quantity": 3885.2424455315554,
+            "unit": "mg"
+          },
+          "VITA_RAE": {
+            "label": "Vitamin A",
+            "quantity": 246.90042395519998,
+            "unit": "µg"
+          },
+          "VITC": {
+            "label": "Vitamin C",
+            "quantity": 345.5847355913334,
+            "unit": "mg"
+          },
+          "THIA": {
+            "label": "Thiamin (B1)",
+            "quantity": 6.220408624813333,
+            "unit": "mg"
+          },
+          "RIBF": {
+            "label": "Riboflavin (B2)",
+            "quantity": 4.799611279027777,
+            "unit": "mg"
+          },
+          "NIA": {
+            "label": "Niacin (B3)",
+            "quantity": 114.07125079756834,
+            "unit": "mg"
+          },
+          "VITB6A": {
+            "label": "Vitamin B6",
+            "quantity": 7.403383890282219,
+            "unit": "mg"
+          },
+          "FOLDFE": {
+            "label": "Folate equivalent (total)",
+            "quantity": 1891.6150528181777,
+            "unit": "µg"
+          },
+          "FOLFD": {
+            "label": "Folate (food)",
+            "quantity": 732.2150528181777,
+            "unit": "µg"
+          },
+          "FOLAC": {
+            "label": "Folic acid",
+            "quantity": 683.4000000000001,
+            "unit": "µg"
+          },
+          "VITB12": {
+            "label": "Vitamin B12",
+            "quantity": 23.33407684378,
+            "unit": "µg"
+          },
+          "VITD": {
+            "label": "Vitamin D",
+            "quantity": 1.9271847400000002,
+            "unit": "µg"
+          },
+          "TOCPHA": {
+            "label": "Vitamin E",
+            "quantity": 44.03291935599778,
+            "unit": "mg"
+          },
+          "VITK1": {
+            "label": "Vitamin K",
+            "quantity": 218.48374043807544,
+            "unit": "µg"
+          },
+          "Sugar.alcohol": {
+            "label": "Sugar alcohol",
+            "quantity": 0,
+            "unit": "g"
+          },
+          "WATER": {
+            "label": "Water",
+            "quantity": 2193.2876144164557,
+            "unit": "g"
+          }
+        }
+      }
+    },
+    {
+      "recipe": {
         "label": "Vegan Herb Crackers recipes",
-        "image": "/src/assets/recipe-images/herb-crackers.jpeg",
+        "image": "/recipe-images/herb-crackers.jpeg",        
         "url": "https://elanaspantry.com/herb-crackers/",
         "yield": 15,
         "dietLabels": [
@@ -1862,7 +2610,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Baked Chicken Parm",
-        "image": "/src/assets/recipe-images/baked-chicken-parm.jpeg",
+        "image": "/recipe-images/baked-chicken-parm.jpeg",
         "url": "https://food52.com/recipes/17016-baked-chicken-parm",
         "yield": 4,
         "dietLabels": [
@@ -2219,7 +2967,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Parmesan grissini",
-        "image": "/src/assets/recipe-images/parmesan-grissini.jpeg",
+        "image": "/recipe-images/parmesan-grissini.jpeg",
         "url": "https://www.goodfood.com.au/recipes/parmesan-grissini-20121001-33zi8",
         "yield": 6,
         "dietLabels": [
@@ -2504,7 +3252,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Easy Chili Almonds recipes",
-        "image": "/src/assets/recipe-images/easy-chili-almonds.jpeg",
+        "image": "/recipe-images/easy-chili-almonds.jpeg",
         "url": "http://www.pumpkinnspice.com/2017/02/05/easy-chili-almonds/",
         "yield": 2,
         "dietLabels": [
@@ -2791,8 +3539,681 @@ export const data = JSON.parse(`{
     },
     {
       "recipe": {
+        "label": "Korean Seasoned Potatoes (감자 조&",
+        "image": "/recipe-images/korean-potatoes.jpeg",
+        "url": "http://www.food.com/recipe/korean-seasoned-potatoes-44048-51088-51312-390718",
+        "yield": 4,
+        "dietLabels": [],
+        "healthLabels": [
+          "Sugar-Conscious",
+          "Vegan",
+          "Vegetarian",
+          "Pescatarian",
+          "Dairy-Free",
+          "Egg-Free",
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Fish-Free",
+          "Shellfish-Free",
+          "Pork-Free",
+          "Red-Meat-Free",
+          "Crustacean-Free",
+          "Celery-Free",
+          "Mustard-Free",
+          "Lupine-Free",
+          "Mollusk-Free",
+          "Alcohol-Free",
+          "Kosher"
+        ],
+        "cautions": [],
+        "ingredientLines": [
+          "2 medium potatoes",
+          "2 tablespoons soy sauce",
+          "2 teaspoons sugar (or sweetener of your choice)",
+          "1 teaspoon garlic, minced",
+          "2 teaspoons sesame seeds",
+          "1 -2 teaspoon sesame seed oil",
+          "4 tablespoons scallions, minced"
+        ],
+        "ingredients": [
+          {
+            "text": "2 medium potatoes",
+            "quantity": 2,
+            "measure": "<unit>",
+            "food": "potatoes",
+            "weight": 426,
+            "foodCategory": "vegetables",
+            "foodId": "food_abiw5baauresjmb6xpap2bg3otzu",
+            "image": "https://www.edamam.com/food-img/651/6512e82417bce15c2899630c1a2799df.jpg"
+          },
+          {
+            "text": "2 tablespoons soy sauce",
+            "quantity": 2,
+            "measure": "tablespoon",
+            "food": "soy sauce",
+            "weight": 32,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_a5g9yevb1iactoaiimbvjbkrxueh",
+            "image": "https://www.edamam.com/food-img/f56/f562e461eb0618f367f538b836c17b82.jpg"
+          },
+          {
+            "text": "2 teaspoons sugar (or sweetener of your choice)",
+            "quantity": 2,
+            "measure": "teaspoon",
+            "food": "sugar",
+            "weight": 8.4,
+            "foodCategory": "sugars",
+            "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          },
+          {
+            "text": "1 teaspoon garlic, minced",
+            "quantity": 1,
+            "measure": "teaspoon",
+            "food": "garlic",
+            "weight": 2.8,
+            "foodCategory": "vegetables",
+            "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+          },
+          {
+            "text": "2 teaspoons sesame seeds",
+            "quantity": 2,
+            "measure": "teaspoon",
+            "food": "sesame seeds",
+            "weight": 6.000000000304327,
+            "foodCategory": "plant-based protein",
+            "foodId": "food_bvxfnx8bwz2q3abs04kd6bbuf9w8",
+            "image": "https://www.edamam.com/food-img/291/291b355a7a0948716243164427697279.jpg"
+          },
+          {
+            "text": "1 -2 teaspoon sesame seed oil",
+            "quantity": 1.5,
+            "measure": "teaspoon",
+            "food": "oil",
+            "weight": 6.75,
+            "foodCategory": "Oils",
+            "foodId": "food_bk9p9aaavhvoq4bqsnprobpsiuxs",
+            "image": "https://www.edamam.com/food-img/07e/07e106ab3536d57428e5c46d009038f8.jpg"
+          },
+          {
+            "text": "4 tablespoons scallions, minced",
+            "quantity": 4,
+            "measure": "tablespoon",
+            "food": "scallions",
+            "weight": 24,
+            "foodCategory": "vegetables",
+            "foodId": "food_bknlkyzbuzo27pb11whr4bttkuy6",
+            "image": "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"
+          }
+        ],
+        "calories": 483.3900000017438,
+        "totalWeight": 505.9500000003043,
+        "totalTime": 20,
+        "cuisineType": [
+          "south east asian",
+          "korean"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "main course"
+        ],
+        "totalNutrients": {
+          "ENERC_KCAL": {
+            "label": "Energy",
+            "quantity": 483.3900000017438,
+            "unit": "kcal"
+          },
+          "FAT": {
+            "label": "Fat",
+            "quantity": 10.35560000015116,
+            "unit": "g"
+          },
+          "FASAT": {
+            "label": "Saturated",
+            "quantity": 1.058849500021172,
+            "unit": "g"
+          },
+          "FATRN": {
+            "label": "Trans",
+            "quantity": 0.026662500000000002,
+            "unit": "g"
+          },
+          "FAMS": {
+            "label": "Monounsaturated",
+            "quantity": 5.440138000057089,
+            "unit": "g"
+          },
+          "FAPU": {
+            "label": "Polyunsaturated",
+            "quantity": 3.498037000066261,
+            "unit": "g"
+          },
+          "CHOCDF": {
+            "label": "Carbs",
+            "quantity": 88.49240000007136,
+            "unit": "g"
+          },
+          "CHOCDF.net": {
+            "label": "Carbohydrates (net)",
+            "quantity": 77.47360000003545,
+            "unit": "g"
+          },
+          "FIBTG": {
+            "label": "Fiber",
+            "quantity": 11.018800000035911,
+            "unit": "g"
+          },
+          "SUGAR": {
+            "label": "Sugars",
+            "quantity": 12.439200000000914,
+            "unit": "g"
+          },
+          "SUGAR.added": {
+            "label": "Sugars, added",
+            "quantity": 8.3832,
+            "unit": "g"
+          },
+          "PROCNT": {
+            "label": "Protein",
+            "quantity": 12.891080000053957,
+            "unit": "g"
+          },
+          "CHOLE": {
+            "label": "Cholesterol",
+            "quantity": 0,
+            "unit": "mg"
+          },
+          "NA": {
+            "label": "Sodium",
+            "quantity": 1788.3800000000335,
+            "unit": "mg"
+          },
+          "CA": {
+            "label": "Calcium",
+            "quantity": 142.6120000029672,
+            "unit": "mg"
+          },
+          "MG": {
+            "label": "Magnesium",
+            "quantity": 148.2200000010682,
+            "unit": "mg"
+          },
+          "K": {
+            "label": "Potassium",
+            "quantity": 2038.376000001424,
+            "unit": "mg"
+          },
+          "FE": {
+            "label": "Iron",
+            "quantity": 5.06680000004428,
+            "unit": "mg"
+          },
+          "ZN": {
+            "label": "Zinc",
+            "quantity": 2.105720000023585,
+            "unit": "mg"
+          },
+          "P": {
+            "label": "Phosphorus",
+            "quantity": 346.8440000019142,
+            "unit": "mg"
+          },
+          "VITA_RAE": {
+            "label": "Vitamin A",
+            "quantity": 12,
+            "unit": "µg"
+          },
+          "VITC": {
+            "label": "Vitamin C",
+            "quantity": 89.3076,
+            "unit": "mg"
+          },
+          "THIA": {
+            "label": "Thiamin (B1)",
+            "quantity": 0.41762000000240723,
+            "unit": "mg"
+          },
+          "RIBF": {
+            "label": "Riboflavin (B2)",
+            "quantity": 0.22781600000075167,
+            "unit": "mg"
+          },
+          "NIA": {
+            "label": "Niacin (B3)",
+            "quantity": 5.60926000001374,
+            "unit": "mg"
+          },
+          "VITB6A": {
+            "label": "Vitamin B6",
+            "quantity": 1.4006800000024042,
+            "unit": "mg"
+          },
+          "FOLDFE": {
+            "label": "Folate equivalent (total)",
+            "quantity": 93.9040000002952,
+            "unit": "µg"
+          },
+          "FOLFD": {
+            "label": "Folate (food)",
+            "quantity": 93.9040000002952,
+            "unit": "µg"
+          },
+          "FOLAC": {
+            "label": "Folic acid",
+            "quantity": 0,
+            "unit": "µg"
+          },
+          "VITB12": {
+            "label": "Vitamin B12",
+            "quantity": 0,
+            "unit": "µg"
+          },
+          "VITD": {
+            "label": "Vitamin D",
+            "quantity": 0,
+            "unit": "µg"
+          },
+          "TOCPHA": {
+            "label": "Vitamin E",
+            "quantity": 1.3703900000007612,
+            "unit": "mg"
+          },
+          "VITK1": {
+            "label": "Vitamin K",
+            "quantity": 62.63435,
+            "unit": "µg"
+          },
+          "Sugar.alcohol": {
+            "label": "Sugar alcohol",
+            "quantity": 0,
+            "unit": "g"
+          },
+          "WATER": {
+            "label": "Water",
+            "quantity": 384.2389200000143,
+            "unit": "g"
+          }
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Oven Baked Mexican Rice recipes",
+        "image": "/recipe-images/mexican-rice.jpeg",
+        "url": "http://keciasflavorbreakthrough.com/oven-baked-mexican-rice/",
+        "yield": 4,
+        "dietLabels": [],
+        "healthLabels": [
+          "Pescatarian",
+          "Gluten-Free",
+          "Wheat-Free",
+          "Egg-Free",
+          "Peanut-Free",
+          "Tree-Nut-Free",
+          "Soy-Free",
+          "Fish-Free",
+          "Shellfish-Free",
+          "Pork-Free",
+          "Red-Meat-Free",
+          "Crustacean-Free",
+          "Celery-Free",
+          "Mustard-Free",
+          "Sesame-Free",
+          "Lupine-Free",
+          "Mollusk-Free",
+          "Alcohol-Free",
+          "No oil added",
+          "Sulfite-Free",
+          "Kosher"
+        ],
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1 cup whole grain rice",
+          "2 cup chicken or vegetable broth",
+          "1 cup tomato sauce",
+          "6 scallions chopped, divided",
+          "1 jalapeno pepper, seeds, veins removed and diced",
+          "½ bell pepper diced",
+          "1 clove garlic minced",
+          "½ cup frozen sweet corn kernels, thawed",
+          "1 tsp cilantro",
+          "2 tsp cumin",
+          "1 tsp chili powder",
+          "2 tsp salt",
+          "1/2 cup shredded cheddar or Mexican blend cheese"
+        ],
+        "ingredients": [
+          {
+            "text": "1 cup whole grain rice",
+            "quantity": 1,
+            "measure": "cup",
+            "food": "whole grain rice",
+            "weight": 190,
+            "foodCategory": "grains",
+            "foodId": "food_aro09r9avsklizbsberuoaegj0uh",
+            "image": "https://www.edamam.com/food-img/c45/c453c255234a6f7f798d3f2aaa74bbcd.jpg"
+          },
+          {
+            "text": "2 cup chicken or vegetable broth",
+            "quantity": 2,
+            "measure": "cup",
+            "food": "vegetable broth",
+            "weight": 454,
+            "foodCategory": "Vegan products",
+            "foodId": "food_bb2qjrjamst0vmam39stubtkmrs4",
+            "image": "https://www.edamam.com/food-img/e61/e6184a8681b772e5198ef0ca1919e1b7.jpg"
+          },
+          {
+            "text": "1 cup tomato sauce",
+            "quantity": 1,
+            "measure": "cup",
+            "food": "tomato sauce",
+            "weight": 245,
+            "foodCategory": "canned vegetables",
+            "foodId": "food_altklniaqmdz3eb1rlf1ybjv8ihn",
+            "image": null
+          },
+          {
+            "text": "6 scallions chopped, divided",
+            "quantity": 6,
+            "measure": "<unit>",
+            "food": "scallions",
+            "weight": 90,
+            "foodCategory": "vegetables",
+            "foodId": "food_bknlkyzbuzo27pb11whr4bttkuy6",
+            "image": "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"
+          },
+          {
+            "text": "1 jalapeno pepper, seeds, veins removed and diced",
+            "quantity": 1,
+            "measure": "<unit>",
+            "food": "jalapeno pepper",
+            "weight": 14,
+            "foodCategory": "vegetables",
+            "foodId": "food_b7txsnbadj6plsbq27zvwah80r6y",
+            "image": "https://www.edamam.com/food-img/0df/0df9aa459870a6d477b0925c1fdb6d4c.jpg"
+          },
+          {
+            "text": "½ bell pepper diced",
+            "quantity": 0.5,
+            "measure": "<unit>",
+            "food": "bell pepper",
+            "weight": 59.5,
+            "foodCategory": "vegetables",
+            "foodId": "food_a8g63g7ak6bnmvbu7agxibp4a0dy",
+            "image": "https://www.edamam.com/food-img/4dc/4dc48b1a506d334b4ab6671b9d56a18f.jpeg"
+          },
+          {
+            "text": "1 clove garlic minced",
+            "quantity": 1,
+            "measure": "clove",
+            "food": "garlic",
+            "weight": 3,
+            "foodCategory": "vegetables",
+            "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+          },
+          {
+            "text": "½ cup frozen sweet corn kernels, thawed",
+            "quantity": 0.5,
+            "measure": "cup",
+            "food": "corn kernels",
+            "weight": 70.5,
+            "foodCategory": "vegetables",
+            "foodId": "food_bljsxw8akb9zr5aj5dahpay2gxsb",
+            "image": "https://www.edamam.com/food-img/34c/34c09c7af85efb3a2025167cc38af8d1.jpg"
+          },
+          {
+            "text": "1 tsp cilantro",
+            "quantity": 1,
+            "measure": "teaspoon",
+            "food": "cilantro",
+            "weight": 0.33333333335024,
+            "foodCategory": "vegetables",
+            "foodId": "food_alhzhuwb4lc7jnb5s6f02by60bzp",
+            "image": "https://www.edamam.com/food-img/d57/d57e375b6ff99a90c7ee2b1990a1af36.jpg"
+          },
+          {
+            "text": "2 tsp cumin",
+            "quantity": 2,
+            "measure": "teaspoon",
+            "food": "cumin",
+            "weight": 4.2,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_a8jjbx4biqndasapojdb5by3e92e",
+            "image": "https://www.edamam.com/food-img/07e/07e2a4eb77ce46591033846504817d35.jpg"
+          },
+          {
+            "text": "1 tsp chili powder",
+            "quantity": 1,
+            "measure": "teaspoon",
+            "food": "chili powder",
+            "weight": 2.7,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_aii2sclb4r123rbfr2ybjasrl3nc",
+            "image": "https://www.edamam.com/food-img/e6f/e6f19043caefc23b5feda5520076617e.jpg"
+          },
+          {
+            "text": "2 tsp salt",
+            "quantity": 2,
+            "measure": "teaspoon",
+            "food": "salt",
+            "weight": 12,
+            "foodCategory": "Condiments and sauces",
+            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+          },
+          {
+            "text": "1/2 cup shredded cheddar or Mexican blend cheese",
+            "quantity": 0.5,
+            "measure": "cup",
+            "food": "Mexican blend cheese",
+            "weight": 56,
+            "foodCategory": "Cheese",
+            "foodId": "food_ari4tsrahqllsdap5f2rkb5g60ng",
+            "image": "https://www.edamam.com/food-img/8ee/8ee24c655103a961f2c48054b672a9db.jpg"
+          }
+        ],
+        "calories": 1123.0241452052305,
+        "totalWeight": 1192.4077378998313,
+        "totalTime": 50,
+        "cuisineType": [
+          "mexican"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "main course"
+        ],
+        "totalNutrients": {
+          "ENERC_KCAL": {
+            "label": "Energy",
+            "quantity": 1123.0241452052305,
+            "unit": "kcal"
+          },
+          "FAT": {
+            "label": "Fat",
+            "quantity": 24.70364773767342,
+            "unit": "g"
+          },
+          "FASAT": {
+            "label": "Saturated",
+            "quantity": 10.97607104170667,
+            "unit": "g"
+          },
+          "FATRN": {
+            "label": "Trans",
+            "quantity": 0,
+            "unit": "g"
+          },
+          "FAMS": {
+            "label": "Monounsaturated",
+            "quantity": 7.384159168186714,
+            "unit": "g"
+          },
+          "FAPU": {
+            "label": "Polyunsaturated",
+            "quantity": 3.43750068367334,
+            "unit": "g"
+          },
+          "CHOCDF": {
+            "label": "Carbs",
+            "quantity": 192.94110791691398,
+            "unit": "g"
+          },
+          "CHOCDF.net": {
+            "label": "Carbohydrates (net)",
+            "quantity": 175.34687236822018,
+            "unit": "g"
+          },
+          "FIBTG": {
+            "label": "Fiber",
+            "quantity": 17.594235548693803,
+            "unit": "g"
+          },
+          "SUGAR": {
+            "label": "Sugars",
+            "quantity": 17.516731647060148,
+            "unit": "g"
+          },
+          "SUGAR.added": {
+            "label": "Sugars, added",
+            "quantity": 0,
+            "unit": "g"
+          },
+          "PROCNT": {
+            "label": "Protein",
+            "quantity": 36.73504390126037,
+            "unit": "g"
+          },
+          "CHOLE": {
+            "label": "Cholesterol",
+            "quantity": 53.2,
+            "unit": "mg"
+          },
+          "NA": {
+            "label": "Sodium",
+            "quantity": 2765.5383320000396,
+            "unit": "mg"
+          },
+          "CA": {
+            "label": "Calcium",
+            "quantity": 612.3098797637601,
+            "unit": "mg"
+          },
+          "MG": {
+            "label": "Magnesium",
+            "quantity": 393.489078675556,
+            "unit": "mg"
+          },
+          "K": {
+            "label": "Potassium",
+            "quantity": 2051.7486483513735,
+            "unit": "mg"
+          },
+          "FE": {
+            "label": "Iron",
+            "quantity": 11.424348741549686,
+            "unit": "mg"
+          },
+          "ZN": {
+            "label": "Zinc",
+            "quantity": 7.386391343193232,
+            "unit": "mg"
+          },
+          "P": {
+            "label": "Phosphorus",
+            "quantity": 969.6826463092882,
+            "unit": "mg"
+          },
+          "VITA_RAE": {
+            "label": "Vitamin A",
+            "quantity": 365.3858809112703,
+            "unit": "µg"
+          },
+          "VITC": {
+            "label": "Vitamin C",
+            "quantity": 129.28132405812454,
+            "unit": "mg"
+          },
+          "THIA": {
+            "label": "Thiamin (B1)",
+            "quantity": 1.0456329733333447,
+            "unit": "mg"
+          },
+          "RIBF": {
+            "label": "Riboflavin (B2)",
+            "quantity": 0.6373697849600275,
+            "unit": "mg"
+          },
+          "NIA": {
+            "label": "Niacin (B3)",
+            "quantity": 13.972286409053524,
+            "unit": "mg"
+          },
+          "VITB6A": {
+            "label": "Vitamin B6",
+            "quantity": 1.7363836725666917,
+            "unit": "mg"
+          },
+          "FOLDFE": {
+            "label": "Folate equivalent (total)",
+            "quantity": 160.10624152709713,
+            "unit": "µg"
+          },
+          "FOLFD": {
+            "label": "Folate (food)",
+            "quantity": 186.89624152709712,
+            "unit": "µg"
+          },
+          "FOLAC": {
+            "label": "Folic acid",
+            "quantity": 0,
+            "unit": "µg"
+          },
+          "VITB12": {
+            "label": "Vitamin B12",
+            "quantity": 0.6890773940000001,
+            "unit": "µg"
+          },
+          "VITD": {
+            "label": "Vitamin D",
+            "quantity": 0.28166164000000005,
+            "unit": "µg"
+          },
+          "TOCPHA": {
+            "label": "Vitamin E",
+            "quantity": 6.9083901328137545,
+            "unit": "mg"
+          },
+          "VITK1": {
+            "label": "Vitamin K",
+            "quantity": 211.47728196646577,
+            "unit": "µg"
+          },
+          "Sugar.alcohol": {
+            "label": "Sugar alcohol",
+            "quantity": 0,
+            "unit": "g"
+          },
+          "WATER": {
+            "label": "Water",
+            "quantity": 922.7590471832152,
+            "unit": "g"
+          }
+        }
+      }
+    },
+    {
+      "recipe": {
         "label": "Swedish Pancakes",
-        "image": "/src/assets/recipe-images/swedish-pancakes.jpeg",
+        "image": "/recipe-images/swedish-pancakes.jpeg",
         "url": "http://scratchthiswithsandy.com/2014/01/19/swedish-pancakes/",
         "yield": 6,
         "dietLabels": [
@@ -3084,7 +4505,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Pizza with taleggio, prosciutto and pear",
-        "image": "/src/assets/recipe-images/pizza-pear.jpeg",
+        "image": "/recipe-images/pizza-pear.jpeg",
         "url": "https://www.goodfood.com.au/recipes/pizza-with-taleggio-prosciutto-and-pear-20111018-29wks",
         "yield": 12,
         "dietLabels": [
@@ -3419,10 +4840,10 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Strawberry Cheesecake recipes",
-        "image": "/src/assets/recipe-images/strawberry-cheesecake.jpeg",
+        "image": "/recipe-images/strawberry-cheesecake.jpeg",
         "url": "http://allrecipes.com/recipe/222588/strawberry-cheesecake/",
         "yield": 12,
-        "dietLabels": ["Low-CarbLow-Sodium"],
+        "dietLabels": [],
         "healthLabels": [
           "Vegetarian",
           "Pescatarian",
@@ -3777,7 +5198,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Mushroom and Spinach Ravioli",
-        "image": "/src/assets/recipe-images/spinach-ravioli.jpeg",
+        "image": "/recipe-images/spinach-ravioli.jpeg",
         "url": "http://ourlifetastesgood.blogspot.com/2012/07/mushroom-and-spinach-ravioli-with-chive.html",
         "yield": 2,
         "dietLabels": [
@@ -4235,7 +5656,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Cajun Pork Pinwheels",
-        "image": "/src/assets/recipe-images/cayun-pork-pinwheel.jpeg",
+        "image": "/recipe-images/cayun-pork-pinwheel.jpeg",
         "url": "https://www.bigoven.com/recipe/cajun-pork-pinwheels/158806",
         "yield": 6,
         "dietLabels": [
@@ -4583,7 +6004,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Fire Roasted Tomato Soup recipes",
-        "image": "/src/assets/recipe-images/tomato-soup.jpeg",
+        "image": "/recipe-images/tomato-soup.jpeg",
         "url": "http://therecipecritic.com/2013/02/fire-roasted-tomato-soup/",
         "yield": 8,
         "dietLabels": [
@@ -4954,10 +6375,10 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Homemade Sweet Spaghetti Sauce",
-        "image": "/src/assets/recipe-images/sweet-spaghetti-sauce.jpeg",
+        "image": "/recipe-images/sweet-spaghetti-sauce.jpeg",
         "url": "https://www.recipezazz.com/recipe/homemade-sweet-spaghetti-sauce-4752",
         "yield": 8,
-        "dietLabels": ["High-FiberLow-Fat"],
+        "dietLabels": [],
         "healthLabels": [
           "Dairy-Free",
           "Gluten-Free",
@@ -5314,1091 +6735,6 @@ export const data = JSON.parse(`{
           "WATER": {
             "label": "Water",
             "quantity": 2191.2693134367505,
-            "unit": "g"
-          }
-        }
-      }
-    },
-    {
-      "recipe": {
-        "label": "Green coconut curry with salmon",
-        "image": "/src/assets/recipe-images/coconut-curry-salmon.jpeg",
-        "url": "http://www.aliceincookingland.com/recipe/green-coconut-curry-salmon/",
-        "yield": 18,
-        "dietLabels": [],
-        "healthLabels": [
-          "Sugar-Conscious",
-          "Pescatarian",
-          "Dairy-Free",
-          "Peanut-Free",
-          "Tree-Nut-Free",
-          "Soy-Free",
-          "Shellfish-Free",
-          "Pork-Free",
-          "Red-Meat-Free",
-          "Celery-Free",
-          "Mustard-Free",
-          "Sesame-Free",
-          "Lupine-Free",
-          "Alcohol-Free",
-          "Sulfite-Free"
-        ],
-        "cautions": [
-          "Tree-Nuts",
-          "Shellfish",
-          "Sulfites",
-          "FODMAP"
-        ],
-        "ingredientLines": [
-          "1 1/2 lb salmon",
-          "1 zuchinni finely chopped",
-          "2 green peppers",
-          "2 cloves garlic diced",
-          "1 lb mushrooms sliced",
-          "2 heads baby bok choy cut into fourths",
-          "3 tsp ginger finely grated",
-          "4 tbsp grapeseed oil",
-          "2 14-oz cans coconut milk",
-          "4 tbsp green curry paste",
-          "2 tbsp fish sauce",
-          "1 lime juiced",
-          "1/2 cup fresh basil chopped",
-          "2 green onions sliced",
-          "1 tsp salt",
-          "1 tsp pepper",
-          "1 package Aisian noodles we used Soba"
-        ],
-        "ingredients": [
-          {
-            "text": "1 1/2 lb salmon",
-            "quantity": 1.5,
-            "measure": "pound",
-            "food": "salmon",
-            "weight": 680.388555,
-            "foodCategory": "seafood",
-            "foodId": "food_bhncugnadgibupafbeeapbislbom",
-            "image": "https://www.edamam.com/food-img/9a0/9a0f38422e9f21dcedbc2dca0d8209ac.jpg"
-          },
-          {
-            "text": "1 zuchinni finely chopped",
-            "quantity": 1,
-            "measure": "<unit>",
-            "food": "zuchinni",
-            "weight": 196,
-            "foodCategory": "vegetables",
-            "foodId": "food_avpihljbuwpd8ibbmahcabaros5s",
-            "image": "https://www.edamam.com/food-img/f63/f637280594e4a731eccc1199194a8847.jpg"
-          },
-          {
-            "text": "2 green peppers",
-            "quantity": 2,
-            "measure": "<unit>",
-            "food": "green peppers",
-            "weight": 232.57777777777778,
-            "foodCategory": "vegetables",
-            "foodId": "food_bz8rcwobbzm7zhb3wh2n7aznivou",
-            "image": "https://www.edamam.com/food-img/629/629dc9fddc1f8aec27fa337dd6ce2b7c.jpg"
-          },
-          {
-            "text": "2 cloves garlic diced",
-            "quantity": 2,
-            "measure": "clove",
-            "food": "garlic",
-            "weight": 6,
-            "foodCategory": "vegetables",
-            "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
-            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
-          },
-          {
-            "text": "1 lb mushrooms sliced",
-            "quantity": 1,
-            "measure": "pound",
-            "food": "mushrooms",
-            "weight": 453.59237,
-            "foodCategory": "vegetables",
-            "foodId": "food_bvlose6arfl26ra396sjrb7hetqh",
-            "image": "https://www.edamam.com/food-img/d63/d639cf4a2afc7407c1d1ce286028136b.jpg"
-          },
-          {
-            "text": "2 heads baby bok choy cut into fourths",
-            "quantity": 2,
-            "measure": "head",
-            "food": "bok choy",
-            "weight": 151.99999999999983,
-            "foodCategory": "vegetables",
-            "foodId": "food_bq7w3usaxapk30b8utp6lasy79lv",
-            "image": "https://www.edamam.com/food-img/c76/c7698a4dc6baecd186476820b6b91cdc.jpg"
-          },
-          {
-            "text": "3 tsp ginger finely grated",
-            "quantity": 3,
-            "measure": "teaspoon",
-            "food": "ginger",
-            "weight": 6,
-            "foodCategory": "vegetables",
-            "foodId": "food_bi2ki2xb5zmmvbaiwf7ztbgktzp6",
-            "image": "https://www.edamam.com/food-img/b9c/b9c06ef451ef29513880af0a53ebbaa6.jpg"
-          },
-          {
-            "text": "4 tbsp grapeseed oil",
-            "quantity": 4,
-            "measure": "tablespoon",
-            "food": "grapeseed oil",
-            "weight": 54.4,
-            "foodCategory": "Oils",
-            "foodId": "food_br8vwihb5tm7wybd4ppzjaox5089",
-            "image": "https://www.edamam.com/food-img/88b/88bb3399c7bf214d2bce6bd86780eaf2.jpg"
-          },
-          {
-            "text": "2 14-oz cans coconut milk",
-            "quantity": 28,
-            "measure": "ounce",
-            "food": "coconut milk",
-            "weight": 793.7866475000001,
-            "foodCategory": "non-dairy beverages",
-            "foodId": "food_by1k6v2adj7drhbq9w1rpbpen9ms",
-            "image": "https://www.edamam.com/food-img/671/671f7528eadb1b01efb53243d0ef0f80.JPG"
-          },
-          {
-            "text": "4 tbsp green curry paste",
-            "quantity": 4,
-            "measure": "tablespoon",
-            "food": "curry paste",
-            "weight": 64,
-            "foodCategory": "condiments and sauces",
-            "foodId": "food_aojdol2are6zg7af2nincbe87jot",
-            "image": "https://www.edamam.com/food-img/b6a/b6a9ebae5850f42eca0253827603ef9c.jpg"
-          },
-          {
-            "text": "2 tbsp fish sauce",
-            "quantity": 2,
-            "measure": "tablespoon",
-            "food": "fish sauce",
-            "weight": 36,
-            "foodCategory": "canned soup",
-            "foodId": "food_ahlu6u3ab8bu1wap7cbqua3s1quk",
-            "image": "https://www.edamam.com/food-img/7b5/7b58b769d8bf7b79acf12a76b79ea9bc.jpg"
-          },
-          {
-            "text": "1 lime juiced",
-            "quantity": 1,
-            "measure": "<unit>",
-            "food": "lime",
-            "weight": 67,
-            "foodCategory": "fruit",
-            "foodId": "food_av58muyb8kg92fbk0g8g8aui5knv",
-            "image": "https://www.edamam.com/food-img/48a/48a123c9576647c4ada6a41df5eeb22a.jpg"
-          },
-          {
-            "text": "1/2 cup fresh basil chopped",
-            "quantity": 0.5,
-            "measure": "cup",
-            "food": "fresh basil",
-            "weight": 12,
-            "foodCategory": "Condiments and sauces",
-            "foodId": "food_bfeht3obd58c3gak5ehpibxgbbs6",
-            "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
-          },
-          {
-            "text": "2 green onions sliced",
-            "quantity": 2,
-            "measure": "<unit>",
-            "food": "green onions",
-            "weight": 30,
-            "foodCategory": "vegetables",
-            "foodId": "food_bknlkyzbuzo27pb11whr4bttkuy6",
-            "image": "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"
-          },
-          {
-            "text": "1 tsp salt",
-            "quantity": 1,
-            "measure": "teaspoon",
-            "food": "salt",
-            "weight": 6,
-            "foodCategory": "Condiments and sauces",
-            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
-            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
-          },
-          {
-            "text": "1 tsp pepper",
-            "quantity": 1,
-            "measure": "teaspoon",
-            "food": "pepper",
-            "weight": 2.9,
-            "foodCategory": "Condiments and sauces",
-            "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
-            "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
-          },
-          {
-            "text": "1 package Aisian noodles we used Soba",
-            "quantity": 1,
-            "measure": "package",
-            "food": "noodles",
-            "weight": 340,
-            "foodCategory": "grains",
-            "foodId": "food_aefg3gqa71nrtpbhjfo3yb36kd81",
-            "image": "https://www.edamam.com/food-img/800/800c9c0d7cef6b5474723682ffa2878d.jpg"
-          }
-        ],
-        "calories": 5112.068417170556,
-        "totalWeight": 3132.645350277778,
-        "totalTime": 0,
-        "cuisineType": [
-          "nordic"
-        ],
-        "mealType": [
-          "lunch/dinner"
-        ],
-        "dishType": [
-          "main course"
-        ],
-        "totalNutrients": {
-          "ENERC_KCAL": {
-            "label": "Energy",
-            "quantity": 5112.068417170556,
-            "unit": "kcal"
-          },
-          "FAT": {
-            "label": "Fat",
-            "quantity": 336.96978048289225,
-            "unit": "g"
-          },
-          "FASAT": {
-            "label": "Saturated",
-            "quantity": 181.28297571055614,
-            "unit": "g"
-          },
-          "FATRN": {
-            "label": "Trans",
-            "quantity": 0.2074,
-            "unit": "g"
-          },
-          "FAMS": {
-            "label": "Monounsaturated",
-            "quantity": 47.68709068526722,
-            "unit": "g"
-          },
-          "FAPU": {
-            "label": "Polyunsaturated",
-            "quantity": 73.26260006699724,
-            "unit": "g"
-          },
-          "CHOCDF": {
-            "label": "Carbs",
-            "quantity": 328.1063749712389,
-            "unit": "g"
-          },
-          "CHOCDF.net": {
-            "label": "Carbohydrates (net)",
-            "quantity": 297.98885939653667,
-            "unit": "g"
-          },
-          "FIBTG": {
-            "label": "Fiber",
-            "quantity": 30.11751557470222,
-            "unit": "g"
-          },
-          "SUGAR": {
-            "label": "Sugars",
-            "quantity": 32.25989848546667,
-            "unit": "g"
-          },
-          "SUGAR.added": {
-            "label": "Sugars, added",
-            "quantity": 0,
-            "unit": "g"
-          },
-          "PROCNT": {
-            "label": "Protein",
-            "quantity": 230.65632545302884,
-            "unit": "g"
-          },
-          "CHOLE": {
-            "label": "Cholesterol",
-            "quantity": 665.70150452552,
-            "unit": "mg"
-          },
-          "NA": {
-            "label": "Sodium",
-            "quantity": 6120.048996514333,
-            "unit": "mg"
-          },
-          "CA": {
-            "label": "Calcium",
-            "quantity": 673.4619165553777,
-            "unit": "mg"
-          },
-          "MG": {
-            "label": "Magnesium",
-            "quantity": 988.5084524161775,
-            "unit": "mg"
-          },
-          "K": {
-            "label": "Potassium",
-            "quantity": 8413.89930292511,
-            "unit": "mg"
-          },
-          "FE": {
-            "label": "Iron",
-            "quantity": 51.18356467470444,
-            "unit": "mg"
-          },
-          "ZN": {
-            "label": "Zinc",
-            "quantity": 18.335398636711112,
-            "unit": "mg"
-          },
-          "P": {
-            "label": "Phosphorus",
-            "quantity": 3885.2424455315554,
-            "unit": "mg"
-          },
-          "VITA_RAE": {
-            "label": "Vitamin A",
-            "quantity": 246.90042395519998,
-            "unit": "µg"
-          },
-          "VITC": {
-            "label": "Vitamin C",
-            "quantity": 345.5847355913334,
-            "unit": "mg"
-          },
-          "THIA": {
-            "label": "Thiamin (B1)",
-            "quantity": 6.220408624813333,
-            "unit": "mg"
-          },
-          "RIBF": {
-            "label": "Riboflavin (B2)",
-            "quantity": 4.799611279027777,
-            "unit": "mg"
-          },
-          "NIA": {
-            "label": "Niacin (B3)",
-            "quantity": 114.07125079756834,
-            "unit": "mg"
-          },
-          "VITB6A": {
-            "label": "Vitamin B6",
-            "quantity": 7.403383890282219,
-            "unit": "mg"
-          },
-          "FOLDFE": {
-            "label": "Folate equivalent (total)",
-            "quantity": 1891.6150528181777,
-            "unit": "µg"
-          },
-          "FOLFD": {
-            "label": "Folate (food)",
-            "quantity": 732.2150528181777,
-            "unit": "µg"
-          },
-          "FOLAC": {
-            "label": "Folic acid",
-            "quantity": 683.4000000000001,
-            "unit": "µg"
-          },
-          "VITB12": {
-            "label": "Vitamin B12",
-            "quantity": 23.33407684378,
-            "unit": "µg"
-          },
-          "VITD": {
-            "label": "Vitamin D",
-            "quantity": 1.9271847400000002,
-            "unit": "µg"
-          },
-          "TOCPHA": {
-            "label": "Vitamin E",
-            "quantity": 44.03291935599778,
-            "unit": "mg"
-          },
-          "VITK1": {
-            "label": "Vitamin K",
-            "quantity": 218.48374043807544,
-            "unit": "µg"
-          },
-          "Sugar.alcohol": {
-            "label": "Sugar alcohol",
-            "quantity": 0,
-            "unit": "g"
-          },
-          "WATER": {
-            "label": "Water",
-            "quantity": 2193.2876144164557,
-            "unit": "g"
-          }
-        }
-      }
-    },
-    {
-      "recipe": {
-        "label": "Korean Seasoned Potatoes (감자 조&",
-        "image": "/src/assets/recipe-images/korean-potatoes.jpeg",
-        "url": "http://www.food.com/recipe/korean-seasoned-potatoes-44048-51088-51312-390718",
-        "yield": 4,
-        "dietLabels": [],
-        "healthLabels": [
-          "Sugar-Conscious",
-          "Vegan",
-          "Vegetarian",
-          "Pescatarian",
-          "Dairy-Free",
-          "Egg-Free",
-          "Peanut-Free",
-          "Tree-Nut-Free",
-          "Fish-Free",
-          "Shellfish-Free",
-          "Pork-Free",
-          "Red-Meat-Free",
-          "Crustacean-Free",
-          "Celery-Free",
-          "Mustard-Free",
-          "Lupine-Free",
-          "Mollusk-Free",
-          "Alcohol-Free",
-          "Kosher"
-        ],
-        "cautions": [],
-        "ingredientLines": [
-          "2 medium potatoes",
-          "2 tablespoons soy sauce",
-          "2 teaspoons sugar (or sweetener of your choice)",
-          "1 teaspoon garlic, minced",
-          "2 teaspoons sesame seeds",
-          "1 -2 teaspoon sesame seed oil",
-          "4 tablespoons scallions, minced"
-        ],
-        "ingredients": [
-          {
-            "text": "2 medium potatoes",
-            "quantity": 2,
-            "measure": "<unit>",
-            "food": "potatoes",
-            "weight": 426,
-            "foodCategory": "vegetables",
-            "foodId": "food_abiw5baauresjmb6xpap2bg3otzu",
-            "image": "https://www.edamam.com/food-img/651/6512e82417bce15c2899630c1a2799df.jpg"
-          },
-          {
-            "text": "2 tablespoons soy sauce",
-            "quantity": 2,
-            "measure": "tablespoon",
-            "food": "soy sauce",
-            "weight": 32,
-            "foodCategory": "plant-based protein",
-            "foodId": "food_a5g9yevb1iactoaiimbvjbkrxueh",
-            "image": "https://www.edamam.com/food-img/f56/f562e461eb0618f367f538b836c17b82.jpg"
-          },
-          {
-            "text": "2 teaspoons sugar (or sweetener of your choice)",
-            "quantity": 2,
-            "measure": "teaspoon",
-            "food": "sugar",
-            "weight": 8.4,
-            "foodCategory": "sugars",
-            "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
-            "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
-          },
-          {
-            "text": "1 teaspoon garlic, minced",
-            "quantity": 1,
-            "measure": "teaspoon",
-            "food": "garlic",
-            "weight": 2.8,
-            "foodCategory": "vegetables",
-            "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
-            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
-          },
-          {
-            "text": "2 teaspoons sesame seeds",
-            "quantity": 2,
-            "measure": "teaspoon",
-            "food": "sesame seeds",
-            "weight": 6.000000000304327,
-            "foodCategory": "plant-based protein",
-            "foodId": "food_bvxfnx8bwz2q3abs04kd6bbuf9w8",
-            "image": "https://www.edamam.com/food-img/291/291b355a7a0948716243164427697279.jpg"
-          },
-          {
-            "text": "1 -2 teaspoon sesame seed oil",
-            "quantity": 1.5,
-            "measure": "teaspoon",
-            "food": "oil",
-            "weight": 6.75,
-            "foodCategory": "Oils",
-            "foodId": "food_bk9p9aaavhvoq4bqsnprobpsiuxs",
-            "image": "https://www.edamam.com/food-img/07e/07e106ab3536d57428e5c46d009038f8.jpg"
-          },
-          {
-            "text": "4 tablespoons scallions, minced",
-            "quantity": 4,
-            "measure": "tablespoon",
-            "food": "scallions",
-            "weight": 24,
-            "foodCategory": "vegetables",
-            "foodId": "food_bknlkyzbuzo27pb11whr4bttkuy6",
-            "image": "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"
-          }
-        ],
-        "calories": 483.3900000017438,
-        "totalWeight": 505.9500000003043,
-        "totalTime": 20,
-        "cuisineType": [
-          "south east asian",
-          "korean"
-        ],
-        "mealType": [
-          "lunch/dinner"
-        ],
-        "dishType": [
-          "main course"
-        ],
-        "totalNutrients": {
-          "ENERC_KCAL": {
-            "label": "Energy",
-            "quantity": 483.3900000017438,
-            "unit": "kcal"
-          },
-          "FAT": {
-            "label": "Fat",
-            "quantity": 10.35560000015116,
-            "unit": "g"
-          },
-          "FASAT": {
-            "label": "Saturated",
-            "quantity": 1.058849500021172,
-            "unit": "g"
-          },
-          "FATRN": {
-            "label": "Trans",
-            "quantity": 0.026662500000000002,
-            "unit": "g"
-          },
-          "FAMS": {
-            "label": "Monounsaturated",
-            "quantity": 5.440138000057089,
-            "unit": "g"
-          },
-          "FAPU": {
-            "label": "Polyunsaturated",
-            "quantity": 3.498037000066261,
-            "unit": "g"
-          },
-          "CHOCDF": {
-            "label": "Carbs",
-            "quantity": 88.49240000007136,
-            "unit": "g"
-          },
-          "CHOCDF.net": {
-            "label": "Carbohydrates (net)",
-            "quantity": 77.47360000003545,
-            "unit": "g"
-          },
-          "FIBTG": {
-            "label": "Fiber",
-            "quantity": 11.018800000035911,
-            "unit": "g"
-          },
-          "SUGAR": {
-            "label": "Sugars",
-            "quantity": 12.439200000000914,
-            "unit": "g"
-          },
-          "SUGAR.added": {
-            "label": "Sugars, added",
-            "quantity": 8.3832,
-            "unit": "g"
-          },
-          "PROCNT": {
-            "label": "Protein",
-            "quantity": 12.891080000053957,
-            "unit": "g"
-          },
-          "CHOLE": {
-            "label": "Cholesterol",
-            "quantity": 0,
-            "unit": "mg"
-          },
-          "NA": {
-            "label": "Sodium",
-            "quantity": 1788.3800000000335,
-            "unit": "mg"
-          },
-          "CA": {
-            "label": "Calcium",
-            "quantity": 142.6120000029672,
-            "unit": "mg"
-          },
-          "MG": {
-            "label": "Magnesium",
-            "quantity": 148.2200000010682,
-            "unit": "mg"
-          },
-          "K": {
-            "label": "Potassium",
-            "quantity": 2038.376000001424,
-            "unit": "mg"
-          },
-          "FE": {
-            "label": "Iron",
-            "quantity": 5.06680000004428,
-            "unit": "mg"
-          },
-          "ZN": {
-            "label": "Zinc",
-            "quantity": 2.105720000023585,
-            "unit": "mg"
-          },
-          "P": {
-            "label": "Phosphorus",
-            "quantity": 346.8440000019142,
-            "unit": "mg"
-          },
-          "VITA_RAE": {
-            "label": "Vitamin A",
-            "quantity": 12,
-            "unit": "µg"
-          },
-          "VITC": {
-            "label": "Vitamin C",
-            "quantity": 89.3076,
-            "unit": "mg"
-          },
-          "THIA": {
-            "label": "Thiamin (B1)",
-            "quantity": 0.41762000000240723,
-            "unit": "mg"
-          },
-          "RIBF": {
-            "label": "Riboflavin (B2)",
-            "quantity": 0.22781600000075167,
-            "unit": "mg"
-          },
-          "NIA": {
-            "label": "Niacin (B3)",
-            "quantity": 5.60926000001374,
-            "unit": "mg"
-          },
-          "VITB6A": {
-            "label": "Vitamin B6",
-            "quantity": 1.4006800000024042,
-            "unit": "mg"
-          },
-          "FOLDFE": {
-            "label": "Folate equivalent (total)",
-            "quantity": 93.9040000002952,
-            "unit": "µg"
-          },
-          "FOLFD": {
-            "label": "Folate (food)",
-            "quantity": 93.9040000002952,
-            "unit": "µg"
-          },
-          "FOLAC": {
-            "label": "Folic acid",
-            "quantity": 0,
-            "unit": "µg"
-          },
-          "VITB12": {
-            "label": "Vitamin B12",
-            "quantity": 0,
-            "unit": "µg"
-          },
-          "VITD": {
-            "label": "Vitamin D",
-            "quantity": 0,
-            "unit": "µg"
-          },
-          "TOCPHA": {
-            "label": "Vitamin E",
-            "quantity": 1.3703900000007612,
-            "unit": "mg"
-          },
-          "VITK1": {
-            "label": "Vitamin K",
-            "quantity": 62.63435,
-            "unit": "µg"
-          },
-          "Sugar.alcohol": {
-            "label": "Sugar alcohol",
-            "quantity": 0,
-            "unit": "g"
-          },
-          "WATER": {
-            "label": "Water",
-            "quantity": 384.2389200000143,
-            "unit": "g"
-          }
-        }
-      }
-    },
-    {
-      "recipe": {
-        "label": "Oven Baked Mexican Rice recipes",
-        "image": "/src/assets/recipe-images/mexican-rice.jpeg",
-        "url": "http://keciasflavorbreakthrough.com/oven-baked-mexican-rice/",
-        "yield": 4,
-        "dietLabels": [],
-        "healthLabels": [
-          "Pescatarian",
-          "Gluten-Free",
-          "Wheat-Free",
-          "Egg-Free",
-          "Peanut-Free",
-          "Tree-Nut-Free",
-          "Soy-Free",
-          "Fish-Free",
-          "Shellfish-Free",
-          "Pork-Free",
-          "Red-Meat-Free",
-          "Crustacean-Free",
-          "Celery-Free",
-          "Mustard-Free",
-          "Sesame-Free",
-          "Lupine-Free",
-          "Mollusk-Free",
-          "Alcohol-Free",
-          "No oil added",
-          "Sulfite-Free",
-          "Kosher"
-        ],
-        "cautions": [
-          "Sulfites"
-        ],
-        "ingredientLines": [
-          "1 cup whole grain rice",
-          "2 cup chicken or vegetable broth",
-          "1 cup tomato sauce",
-          "6 scallions chopped, divided",
-          "1 jalapeno pepper, seeds, veins removed and diced",
-          "½ bell pepper diced",
-          "1 clove garlic minced",
-          "½ cup frozen sweet corn kernels, thawed",
-          "1 tsp cilantro",
-          "2 tsp cumin",
-          "1 tsp chili powder",
-          "2 tsp salt",
-          "1/2 cup shredded cheddar or Mexican blend cheese"
-        ],
-        "ingredients": [
-          {
-            "text": "1 cup whole grain rice",
-            "quantity": 1,
-            "measure": "cup",
-            "food": "whole grain rice",
-            "weight": 190,
-            "foodCategory": "grains",
-            "foodId": "food_aro09r9avsklizbsberuoaegj0uh",
-            "image": "https://www.edamam.com/food-img/c45/c453c255234a6f7f798d3f2aaa74bbcd.jpg"
-          },
-          {
-            "text": "2 cup chicken or vegetable broth",
-            "quantity": 2,
-            "measure": "cup",
-            "food": "vegetable broth",
-            "weight": 454,
-            "foodCategory": "Vegan products",
-            "foodId": "food_bb2qjrjamst0vmam39stubtkmrs4",
-            "image": "https://www.edamam.com/food-img/e61/e6184a8681b772e5198ef0ca1919e1b7.jpg"
-          },
-          {
-            "text": "1 cup tomato sauce",
-            "quantity": 1,
-            "measure": "cup",
-            "food": "tomato sauce",
-            "weight": 245,
-            "foodCategory": "canned vegetables",
-            "foodId": "food_altklniaqmdz3eb1rlf1ybjv8ihn",
-            "image": null
-          },
-          {
-            "text": "6 scallions chopped, divided",
-            "quantity": 6,
-            "measure": "<unit>",
-            "food": "scallions",
-            "weight": 90,
-            "foodCategory": "vegetables",
-            "foodId": "food_bknlkyzbuzo27pb11whr4bttkuy6",
-            "image": "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"
-          },
-          {
-            "text": "1 jalapeno pepper, seeds, veins removed and diced",
-            "quantity": 1,
-            "measure": "<unit>",
-            "food": "jalapeno pepper",
-            "weight": 14,
-            "foodCategory": "vegetables",
-            "foodId": "food_b7txsnbadj6plsbq27zvwah80r6y",
-            "image": "https://www.edamam.com/food-img/0df/0df9aa459870a6d477b0925c1fdb6d4c.jpg"
-          },
-          {
-            "text": "½ bell pepper diced",
-            "quantity": 0.5,
-            "measure": "<unit>",
-            "food": "bell pepper",
-            "weight": 59.5,
-            "foodCategory": "vegetables",
-            "foodId": "food_a8g63g7ak6bnmvbu7agxibp4a0dy",
-            "image": "https://www.edamam.com/food-img/4dc/4dc48b1a506d334b4ab6671b9d56a18f.jpeg"
-          },
-          {
-            "text": "1 clove garlic minced",
-            "quantity": 1,
-            "measure": "clove",
-            "food": "garlic",
-            "weight": 3,
-            "foodCategory": "vegetables",
-            "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
-            "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
-          },
-          {
-            "text": "½ cup frozen sweet corn kernels, thawed",
-            "quantity": 0.5,
-            "measure": "cup",
-            "food": "corn kernels",
-            "weight": 70.5,
-            "foodCategory": "vegetables",
-            "foodId": "food_bljsxw8akb9zr5aj5dahpay2gxsb",
-            "image": "https://www.edamam.com/food-img/34c/34c09c7af85efb3a2025167cc38af8d1.jpg"
-          },
-          {
-            "text": "1 tsp cilantro",
-            "quantity": 1,
-            "measure": "teaspoon",
-            "food": "cilantro",
-            "weight": 0.33333333335024,
-            "foodCategory": "vegetables",
-            "foodId": "food_alhzhuwb4lc7jnb5s6f02by60bzp",
-            "image": "https://www.edamam.com/food-img/d57/d57e375b6ff99a90c7ee2b1990a1af36.jpg"
-          },
-          {
-            "text": "2 tsp cumin",
-            "quantity": 2,
-            "measure": "teaspoon",
-            "food": "cumin",
-            "weight": 4.2,
-            "foodCategory": "Condiments and sauces",
-            "foodId": "food_a8jjbx4biqndasapojdb5by3e92e",
-            "image": "https://www.edamam.com/food-img/07e/07e2a4eb77ce46591033846504817d35.jpg"
-          },
-          {
-            "text": "1 tsp chili powder",
-            "quantity": 1,
-            "measure": "teaspoon",
-            "food": "chili powder",
-            "weight": 2.7,
-            "foodCategory": "Condiments and sauces",
-            "foodId": "food_aii2sclb4r123rbfr2ybjasrl3nc",
-            "image": "https://www.edamam.com/food-img/e6f/e6f19043caefc23b5feda5520076617e.jpg"
-          },
-          {
-            "text": "2 tsp salt",
-            "quantity": 2,
-            "measure": "teaspoon",
-            "food": "salt",
-            "weight": 12,
-            "foodCategory": "Condiments and sauces",
-            "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
-            "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
-          },
-          {
-            "text": "1/2 cup shredded cheddar or Mexican blend cheese",
-            "quantity": 0.5,
-            "measure": "cup",
-            "food": "Mexican blend cheese",
-            "weight": 56,
-            "foodCategory": "Cheese",
-            "foodId": "food_ari4tsrahqllsdap5f2rkb5g60ng",
-            "image": "https://www.edamam.com/food-img/8ee/8ee24c655103a961f2c48054b672a9db.jpg"
-          }
-        ],
-        "calories": 1123.0241452052305,
-        "totalWeight": 1192.4077378998313,
-        "totalTime": 50,
-        "cuisineType": [
-          "mexican"
-        ],
-        "mealType": [
-          "lunch/dinner"
-        ],
-        "dishType": [
-          "main course"
-        ],
-        "totalNutrients": {
-          "ENERC_KCAL": {
-            "label": "Energy",
-            "quantity": 1123.0241452052305,
-            "unit": "kcal"
-          },
-          "FAT": {
-            "label": "Fat",
-            "quantity": 24.70364773767342,
-            "unit": "g"
-          },
-          "FASAT": {
-            "label": "Saturated",
-            "quantity": 10.97607104170667,
-            "unit": "g"
-          },
-          "FATRN": {
-            "label": "Trans",
-            "quantity": 0,
-            "unit": "g"
-          },
-          "FAMS": {
-            "label": "Monounsaturated",
-            "quantity": 7.384159168186714,
-            "unit": "g"
-          },
-          "FAPU": {
-            "label": "Polyunsaturated",
-            "quantity": 3.43750068367334,
-            "unit": "g"
-          },
-          "CHOCDF": {
-            "label": "Carbs",
-            "quantity": 192.94110791691398,
-            "unit": "g"
-          },
-          "CHOCDF.net": {
-            "label": "Carbohydrates (net)",
-            "quantity": 175.34687236822018,
-            "unit": "g"
-          },
-          "FIBTG": {
-            "label": "Fiber",
-            "quantity": 17.594235548693803,
-            "unit": "g"
-          },
-          "SUGAR": {
-            "label": "Sugars",
-            "quantity": 17.516731647060148,
-            "unit": "g"
-          },
-          "SUGAR.added": {
-            "label": "Sugars, added",
-            "quantity": 0,
-            "unit": "g"
-          },
-          "PROCNT": {
-            "label": "Protein",
-            "quantity": 36.73504390126037,
-            "unit": "g"
-          },
-          "CHOLE": {
-            "label": "Cholesterol",
-            "quantity": 53.2,
-            "unit": "mg"
-          },
-          "NA": {
-            "label": "Sodium",
-            "quantity": 2765.5383320000396,
-            "unit": "mg"
-          },
-          "CA": {
-            "label": "Calcium",
-            "quantity": 612.3098797637601,
-            "unit": "mg"
-          },
-          "MG": {
-            "label": "Magnesium",
-            "quantity": 393.489078675556,
-            "unit": "mg"
-          },
-          "K": {
-            "label": "Potassium",
-            "quantity": 2051.7486483513735,
-            "unit": "mg"
-          },
-          "FE": {
-            "label": "Iron",
-            "quantity": 11.424348741549686,
-            "unit": "mg"
-          },
-          "ZN": {
-            "label": "Zinc",
-            "quantity": 7.386391343193232,
-            "unit": "mg"
-          },
-          "P": {
-            "label": "Phosphorus",
-            "quantity": 969.6826463092882,
-            "unit": "mg"
-          },
-          "VITA_RAE": {
-            "label": "Vitamin A",
-            "quantity": 365.3858809112703,
-            "unit": "µg"
-          },
-          "VITC": {
-            "label": "Vitamin C",
-            "quantity": 129.28132405812454,
-            "unit": "mg"
-          },
-          "THIA": {
-            "label": "Thiamin (B1)",
-            "quantity": 1.0456329733333447,
-            "unit": "mg"
-          },
-          "RIBF": {
-            "label": "Riboflavin (B2)",
-            "quantity": 0.6373697849600275,
-            "unit": "mg"
-          },
-          "NIA": {
-            "label": "Niacin (B3)",
-            "quantity": 13.972286409053524,
-            "unit": "mg"
-          },
-          "VITB6A": {
-            "label": "Vitamin B6",
-            "quantity": 1.7363836725666917,
-            "unit": "mg"
-          },
-          "FOLDFE": {
-            "label": "Folate equivalent (total)",
-            "quantity": 160.10624152709713,
-            "unit": "µg"
-          },
-          "FOLFD": {
-            "label": "Folate (food)",
-            "quantity": 186.89624152709712,
-            "unit": "µg"
-          },
-          "FOLAC": {
-            "label": "Folic acid",
-            "quantity": 0,
-            "unit": "µg"
-          },
-          "VITB12": {
-            "label": "Vitamin B12",
-            "quantity": 0.6890773940000001,
-            "unit": "µg"
-          },
-          "VITD": {
-            "label": "Vitamin D",
-            "quantity": 0.28166164000000005,
-            "unit": "µg"
-          },
-          "TOCPHA": {
-            "label": "Vitamin E",
-            "quantity": 6.9083901328137545,
-            "unit": "mg"
-          },
-          "VITK1": {
-            "label": "Vitamin K",
-            "quantity": 211.47728196646577,
-            "unit": "µg"
-          },
-          "Sugar.alcohol": {
-            "label": "Sugar alcohol",
-            "quantity": 0,
-            "unit": "g"
-          },
-          "WATER": {
-            "label": "Water",
-            "quantity": 922.7590471832152,
             "unit": "g"
           }
         }
