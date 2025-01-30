@@ -1,4 +1,4 @@
- import {
+import {
   Box,
   Text,
   FormControl,
@@ -17,15 +17,15 @@
   ModalBody,
   ModalFooter,
   useColorModeValue,
-} from '@chakra-ui/react';
-import emailjs from '@emailjs/browser';
-import { useState, useEffect } from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
-import LogoutButton from '../components/LogoutButton';
+} from "@chakra-ui/react";
+import emailjs from "@emailjs/browser";
+import { useState, useEffect } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+import LogoutButton from "../components/LogoutButton";
 
 const Contact = () => {
   const { isAuthenticated, loginWithRedirect } = useAuth0();
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
@@ -48,15 +48,15 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert('Message sent successfully!');
+          alert("Message sent successfully!");
         },
         (error) => {
           console.log(error.text);
-          alert('Error sending message.');
+          alert("Error sending message.");
         }
       );
 
-    setFormData({ name: '', email: '', message: '' });
+    setFormData({ name: "", email: "", message: "" });
   };
 
   const handleLogin = () => {
@@ -68,18 +68,20 @@ const Contact = () => {
   };
 
   // Dynamic colors based on Dark/Light Mode
-  const bgColor = useColorModeValue('white', 'black');
-  const textColor = useColorModeValue('black', 'white');
-  const headerFooterBg = useColorModeValue('teal.500', 'teal.700');
-  const containerBg = useColorModeValue('gray.50', 'gray.900');
+  const bgColor = useColorModeValue("white", "black");
+  const textColor = useColorModeValue("black", "white");
+  const headerFooterBg = useColorModeValue("teal.500", "teal.700");
+  const containerBg = useColorModeValue("gray.50", "gray.900");
 
   return (
     <Box minHeight="100vh" display="flex" flexDirection="column" bg={bgColor} color={textColor}>
+      <Box as="header" bg={headerFooterBg} p={5} boxShadow="md">
+        <Text color={"white"} fontSize={"xl"} fontWeight={"bold"}>Max Recipe Checker</Text>
       </Box>
 
-      <Center flex={1} py={8}>
+      <Center flex="1" py={8}>
         {isAuthenticated ? (
-          <Container maxW="lg" bg={containerBg} p={8} boxShadow="md" borderRadius="md">
+          <Container maxW={"lg"} bg={containerBg} p={8} boxShadow={"md"} borderRadius={"md"}>
             <Heading as="h2" size="lg" mb={6} textAlign="center">Contact Us</Heading>
             <form onSubmit={handleSubmit}>
               <FormControl isRequired mb={4}>
@@ -89,7 +91,6 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder="Your Name"
-                  isRequired
                   bg={bgColor}
                   color={textColor}
                 />
@@ -103,7 +104,6 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder="Your Email"
-                  isRequired
                   bg={bgColor}
                   color={textColor}
                 />
@@ -116,7 +116,6 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   placeholder="Your Message"
-                  isRequired
                   bg={bgColor}
                   color={textColor}
                 />
@@ -125,13 +124,15 @@ const Contact = () => {
               <Button type="submit" colorScheme="teal" width="full">Send Message</Button>
             </form>
 
-            <LogoutButton /> {/* Logout button remains unchanged */}
+            <LogoutButton />
           </Container>
         ) : (
-          <Text fontSize="lg">Please log in to contact us!</Text>
+          <Text fontSize={"lg"}>Please log in to contact us!</Text>
         )}
       </Center>
 
+      <Box as="footer" bg={headerFooterBg} p={5} boxShadow={"md"} mt={5}>
+        <Text color={"white"} textAlign={"center"}>© {new Date().getFullYear()} Max Recipe Checker. All rights reserved.</Text>
       </Box>
 
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
