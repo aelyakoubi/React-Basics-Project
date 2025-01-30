@@ -77,7 +77,7 @@ const Contact = () => {
     <Box minHeight="100vh" display="flex" flexDirection="column" bg={bgColor} color={textColor}>
       </Box>
 
-      <Center flex="1" py={8}>
+      <Center flex={1} py={8}>
         {isAuthenticated ? (
           <Container maxW="lg" bg={containerBg} p={8} boxShadow="md" borderRadius="md">
             <Heading as="h2" size="lg" mb={6} textAlign="center">Contact Us</Heading>
