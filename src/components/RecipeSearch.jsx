@@ -57,6 +57,7 @@ export const RecipeSearch = ({ onClick }) => {
       <Input
         placeholder="Search for recipes..."
         onChange={handleChange}
+mx="auto"
         w={inputWidth}
         border="solid"
         h={10}
