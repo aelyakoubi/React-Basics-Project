@@ -67,14 +67,13 @@ const Contact = () => {
     setIsModalOpen(false);
   };
 
-  // Dynamic colors based on Dark/Light Mode
+  // Dynamic colors for Light/Dark Mode
   const bgColor = useColorModeValue("white", "black");
   const textColor = useColorModeValue("black", "white");
-  const headerFooterBg = useColorModeValue("teal.500", "teal.700");
   const containerBg = useColorModeValue("gray.50", "gray.900");
 
   return (
-
+    <Box minHeight="100vh" display="flex" flexDirection="column" bg={bgColor} color={textColor}>
       <Center flex="1" py={8}>
         {isAuthenticated ? (
           <Container maxW={"lg"} bg={containerBg} p={8} boxShadow={"md"} borderRadius={"md"}>
@@ -126,8 +125,6 @@ const Contact = () => {
           <Text fontSize={"lg"}>Please log in to contact us!</Text>
         )}
       </Center>
-
- 
 
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
         <ModalOverlay />
