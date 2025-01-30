@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
   return (
     <Flex
       direction='column'
+      width='100%'
       minHeight='100vh'
       bg={bgColor} // Background for the entire layout, responsive to color mode
       color={textColor} // Text color responsive to color mode
