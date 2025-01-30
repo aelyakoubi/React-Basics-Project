@@ -1,79 +1,70 @@
-import { Box, Button, Flex, HStack, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Flex,
+  HStack,
+  Text,
+  useBreakpointValue,
+} from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import SocialIcons from './SocialIcons'; // Importing social media icons component
+import SocialIcons from './SocialIcons';
 
 const Footer = () => {
+  const isSmallScreen = useBreakpointValue({ base: true, md: false });
+
   return (
     <Box
       as='footer'
-      position='sticky'
-      bottom={0}
       bg='teal.500'
-      p={1}
-      mt={0}
-      boxShadow='md'
+      color='white'
+      p={4}
+      position='relative'
+      bottom={0}
+      width='100%'
     >
-      <Flex direction='column' align='center'>
-        <HStack spacing={6} mb={2}>
+      <Flex
+        direction={isSmallScreen ? 'column' : 'row'}
+        justify='space-between'
+        align='center'
+        wrap='wrap' // Ensures content wraps correctly on small screens
+      >
+        <Text fontSize={isSmallScreen ? 'sm' : 'md'}>
+          Max Recipe Checker © 2025
+        </Text>
+
+        {/* Navigation Links in Footer */}
+        <HStack spacing={4} justify='center' wrap='wrap'>
           <Button
             as={Link}
-            to='/'
-            colorScheme='teal'
+            to='/terms'
             variant='link'
-            color='pink.100'
-            fontSize='xl'
+            color='white'
+            fontSize='sm'
           >
-            Home
-          </Button>
-          <Button
-            as={Link}
-            to='/about'
-            colorScheme='teal'
-            variant='link'
-            color='pink.100'
-            fontSize='xl'
-          >
-            About
-          </Button>
-          <Button
-            as={Link}
-            to='/contact'
-            colorScheme='teal'
-            variant='link'
-            color='pink.100'
-            fontSize='xl'
-          >
-            Contact
+            Terms
           </Button>
           <Button
             as={Link}
             to='/privacy'
-            colorScheme='teal'
             variant='link'
-            color='pink.100'
-            fontSize='xl'
+            color='white'
+            fontSize='sm'
           >
             Privacy
           </Button>
           <Button
             as={Link}
-            to='/terms'
-            colorScheme='teal'
+            to='/contact'
             variant='link'
-            color='pink.100'
-            fontSize='xl'
+            color='white'
+            fontSize='sm'
           >
-            Terms
+            Contact
           </Button>
         </HStack>
 
-        {/* Social Media Icons */}
+        {/* Social Icons */}
         <SocialIcons />
-
-        <Text textAlign='center' color='white' mt={2}>
-          &copy; {new Date().getFullYear()} Max Recipe Checker. All rights
-          reserved.
-        </Text>
       </Flex>
     </Box>
   );

@@ -7,6 +7,8 @@ import {
   HStack,
   IconButton,
   useBreakpointValue,
+  useColorMode,
+  useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
@@ -17,12 +19,22 @@ const MotionBox = motion(Box);
 
 const Header = () => {
   const { isOpen, onToggle } = useDisclosure();
+  const { toggleColorMode } = useColorMode(); // Hook to toggle color mode
   const isMobile = useBreakpointValue({ base: true, md: false });
+
+  // Get the current color mode for button text
+  const buttonText = useColorModeValue(
+    'Switch to Dark Mode',
+    'Switch to Light Mode'
+  );
+
+  // Adjust text size for small screens
+  const buttonSize = useBreakpointValue({ base: 'sm', md: 'md' });
 
   return (
     <Box position='sticky' top={0} zIndex={5} bg='teal.500' boxShadow='md'>
       <Flex p={1} justify='space-between' align='center'>
-        <Heading color='white' size='xl'>
+        <Heading color='white' size='xl' fontSize={{ base: 'lg', md: 'xl' }}>
           Max Recipe Checker
         </Heading>
 
@@ -57,7 +69,7 @@ const Header = () => {
           </Button>
         </HStack>
 
-        {/* Mobile Hamburger Menu Button - Always Visible */}
+        {/* Mobile Hamburger Menu Button */}
         {isMobile && !isOpen && (
           <IconButton
             icon={<HamburgerIcon />}
@@ -65,8 +77,19 @@ const Header = () => {
             color='white'
             variant='outline'
             aria-label='Open Menu'
+            zIndex={10}
           />
         )}
+
+        {/* Dark/Light Mode Toggle Button */}
+        <Button
+          onClick={toggleColorMode}
+          colorScheme='teal'
+          variant='outline'
+          fontSize={buttonSize} // Responsive font size
+        >
+          {buttonText}
+        </Button>
       </Flex>
 
       {/* Sliding Mobile Menu */}
