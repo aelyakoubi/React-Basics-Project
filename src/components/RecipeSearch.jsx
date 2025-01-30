@@ -12,34 +12,24 @@ import { RecipeItems } from './RecipeItems';
 
 export const RecipeSearch = ({ onClick }) => {
   const [searchField, setSearchField] = useState('');
-  const [filter, setFilter] = useState('all'); // For category filtering
+  const [filter, setFilter] = useState('all');
 
   const recipes = availableRecipes.hits;
 
-  // Filter recipes based on category and search field
+  // Filter recipes based on category and search input
   const filteredRecipes = recipes.filter(({ recipe }) => {
-    const matchesSearch =
-      recipe.label.toLowerCase().includes(searchField.toLowerCase()) || '';
+    const matchesSearch = recipe.label.toLowerCase().includes(searchField.toLowerCase()) || '';
 
-    // Check if the recipe matches the selected filter
     let matchesCategory = true;
     if (filter === 'vegetarian') {
       matchesCategory = recipe.healthLabels.includes('Vegetarian');
     } else if (filter === 'meat') {
-      // Check if the recipe contains meat-related ingredients
       const meatIngredients = ['beef', 'chicken', 'pork', 'lamb', 'meat'];
       matchesCategory = recipe.ingredientLines.some((line) =>
         meatIngredients.some((meat) => line.toLowerCase().includes(meat))
       );
     } else if (filter === 'vegetables') {
-      // Check if the recipe contains vegetable-related ingredients
-      const vegetableIngredients = [
-        'carrot',
-        'broccoli',
-        'spinach',
-        'lettuce',
-        'vegetable',
-      ];
+      const vegetableIngredients = ['carrot', 'broccoli', 'spinach', 'lettuce', 'vegetable'];
       matchesCategory = recipe.ingredientLines.some((line) =>
         vegetableIngredients.some((veg) => line.toLowerCase().includes(veg))
       );
@@ -57,30 +47,31 @@ export const RecipeSearch = ({ onClick }) => {
   };
 
   // Responsive styles
-  const inputWidth = useBreakpointValue({ base: '100%', md: '180px' });
+  const inputWidth = useBreakpointValue({ base: '100%', sm: '80%', md: '50%', lg: '40%' });
   const radioStackDirection = useBreakpointValue({ base: 'column', md: 'row' });
+  const containerPadding = useBreakpointValue({ base: 2, sm: 4, md: 6 });
 
   return (
-    <Box p={4}>
+    <Box p={containerPadding} width="100%" maxW="1200px" mx="auto">
       {/* Search Input */}
       <Input
-        placeholder='Search for recipes...'
+        placeholder="Search for recipes..."
         onChange={handleChange}
         w={inputWidth}
-        border='solid'
+        border="solid"
         h={10}
-        _placeholder={{ color: 'gray.400' }} // Light gray placeholder text
-        mb={4} // Margin bottom for spacing
+        _placeholder={{ color: 'gray.400' }}
+        mb={4}
       />
 
       {/* Radio Buttons for Filtering */}
       <Box mt={4}>
         <RadioGroup onChange={handleFilterChange} value={filter}>
           <Stack direction={radioStackDirection} spacing={4}>
-            <Radio value='all'>All Recipes</Radio>
-            <Radio value='vegetarian'>Vegetarian</Radio>
-            <Radio value='meat'>Meat</Radio>
-            <Radio value='vegetables'>Vegetables</Radio>
+            <Radio value="all">All Recipes</Radio>
+            <Radio value="vegetarian">Vegetarian</Radio>
+            <Radio value="meat">Meat</Radio>
+            <Radio value="vegetables">Vegetables</Radio>
           </Stack>
         </RadioGroup>
       </Box>
