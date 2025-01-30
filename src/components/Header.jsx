@@ -113,6 +113,7 @@ const Header = () => {
           >
             Home
           </Button>
+
           <Button
             as={Link}
             to='/about'
@@ -124,6 +125,7 @@ const Header = () => {
           >
             About
           </Button>
+
           <Button
             as={Link}
             to='/contact'
