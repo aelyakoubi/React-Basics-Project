@@ -15,8 +15,6 @@ const RecipesPage = () => {
       justify='center'
       minHeight='100vh'
       width='100%'
-      bg='white'
-      color='black'
       px={['2', '4', '8']} // responsive padding
     >
       {userRecipe ? (
