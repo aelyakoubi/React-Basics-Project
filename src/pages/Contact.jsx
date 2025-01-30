@@ -74,10 +74,6 @@ const Contact = () => {
   const containerBg = useColorModeValue("gray.50", "gray.900");
 
   return (
-    <Box minHeight="100vh" display="flex" flexDirection="column" bg={bgColor} color={textColor}>
-      <Box as="header" bg={headerFooterBg} p={5} boxShadow="md">
-        <Text color={"white"} fontSize={"xl"} fontWeight={"bold"}>Max Recipe Checker</Text>
-      </Box>
 
       <Center flex="1" py={8}>
         {isAuthenticated ? (
@@ -131,9 +127,7 @@ const Contact = () => {
         )}
       </Center>
 
-      <Box as="footer" bg={headerFooterBg} p={5} boxShadow={"md"} mt={5}>
-        <Text color={"white"} textAlign={"center"}>© {new Date().getFullYear()} Max Recipe Checker. All rights reserved.</Text>
-      </Box>
+ 
 
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
         <ModalOverlay />
