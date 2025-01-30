@@ -53,7 +53,7 @@ const Footer = () => {
             color='pink.100'
             fontSize='xl'
           >
-            Privacy Policy
+            Privacy
           </Button>
           <Button
             as={Link}
@@ -63,7 +63,7 @@ const Footer = () => {
             color='pink.100'
             fontSize='xl'
           >
-            Terms & Conditions
+            Terms
           </Button>
         </HStack>
 

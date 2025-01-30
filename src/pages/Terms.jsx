@@ -1,7 +1,7 @@
 import { Box, Heading, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 
-const TermsAndConditions = () => {
+const Terms = () => {
   return (
     <Box p={5}>
       <VStack align='start' spacing={4}>
@@ -106,4 +106,4 @@ const TermsAndConditions = () => {
   );
 };
 
-export default TermsAndConditions;
+export default Terms;
