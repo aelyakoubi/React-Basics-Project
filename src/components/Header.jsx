@@ -24,8 +24,8 @@ const Header = () => {
 
   // Get the current color mode for button text
   const buttonText = useColorModeValue(
-    'Switch to Dark Mode',
-    'Switch to Light Mode'
+    'Dark Mode',
+    'Light Mode'
   );
 
   // Adjust text size for small screens
