@@ -7,7 +7,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Paleo Chocolate Covered Caramels",
-        "image": "/src/assets/recipe-images/chocolate-caramel.jpeg",
+        "image": "/recipe-images/chocolate-caramel.jpeg",
         "url": "http://ourfineday.com/happy-birthday-travis-and-a-recipe-for-chocolate-covered-chocolates/",
         "yield": 12,
         "dietLabels": [
@@ -314,7 +314,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Grilled Pork Chops with Chipotle Sauce",
-        "image": "/src/assets/recipe-images/Grilled-Pork-Chop-with-Chipotle-Sauce.jpeg",
+        "image": "/recipe-images/Grilled-Pork-Chop-with-Chipotle-Sauce.jpeg",
         "url": "https://grumpyshoneybunch.com/2009/07/grilled-pork-chops-chipotle-sauce.html",
         "yield": 8,
         "dietLabels": [
@@ -608,7 +608,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Slow Cooker Turkey Dip Sandwiches recipes",
-        "image": "/src/assets/recipe-images/turkey-sandwich.jpeg",
+        "image": "/recipe-images/turkey-sandwich.jpeg",
         "url": "http://www.bobbiskozykitchen.com/2015/03/slow-cooker-turkey-dip-sandwiches.html",
         "yield": 4,
         "dietLabels": [
@@ -964,7 +964,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Blueberry Basil Margarita Cocktail recipes",
-        "image": "/src/assets/recipe-images/blueberry-margarita.jpeg",
+        "image": "/recipe-images/blueberry-margarita.jpeg",
         "url": "http://drinkwire.liquor.com/post/blueberry-basil-margarita-cocktail-recipe/",
         "yield": 4,
         "dietLabels": [
@@ -1257,7 +1257,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Potato Gratin",
-        "image": "/src/assets/recipe-images/potatoes-gratin.jpeg",
+        "image": "/recipe-images/potatoes-gratin.jpeg",
         "url": "http://www.cookstr.com/recipes/potato-gratin-2",
         "yield": 12,
         "dietLabels": [],
@@ -1593,7 +1593,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Seafood Casserole",
-        "image": "/src/assets/recipe-images/seafood-casserol.jpeg",
+        "image": "/recipe-images/seafood-casserol.jpeg",
         "url": "http://www.bigoven.com/recipe/Seafood-Casserole/296427",
         "yield": 6,
         "dietLabels": [
@@ -1904,7 +1904,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Green coconut curry with salmon",
-        "image": "/src/assets/recipe-images/coconut-curry-salmon.jpeg",
+        "image": "/recipe-images/coconut-curry-salmon.jpeg",
         "url": "http://www.aliceincookingland.com/recipe/green-coconut-curry-salmon/",
         "yield": 18,
         "dietLabels": [],
@@ -2316,7 +2316,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Vegan Herb Crackers recipes",
-        "image": "/src/assets/recipe-images/herb-crackers.jpeg",        
+        "image": "/recipe-images/herb-crackers.jpeg",        
         "url": "https://elanaspantry.com/herb-crackers/",
         "yield": 15,
         "dietLabels": [
@@ -2610,7 +2610,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Baked Chicken Parm",
-        "image": "/src/assets/recipe-images/baked-chicken-parm.jpeg",
+        "image": "/recipe-images/baked-chicken-parm.jpeg",
         "url": "https://food52.com/recipes/17016-baked-chicken-parm",
         "yield": 4,
         "dietLabels": [
@@ -2967,7 +2967,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Parmesan grissini",
-        "image": "/src/assets/recipe-images/parmesan-grissini.jpeg",
+        "image": "/recipe-images/parmesan-grissini.jpeg",
         "url": "https://www.goodfood.com.au/recipes/parmesan-grissini-20121001-33zi8",
         "yield": 6,
         "dietLabels": [
@@ -3252,7 +3252,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Easy Chili Almonds recipes",
-        "image": "/src/assets/recipe-images/easy-chili-almonds.jpeg",
+        "image": "/recipe-images/easy-chili-almonds.jpeg",
         "url": "http://www.pumpkinnspice.com/2017/02/05/easy-chili-almonds/",
         "yield": 2,
         "dietLabels": [
@@ -3540,7 +3540,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Korean Seasoned Potatoes (감자 조&",
-        "image": "/src/assets/recipe-images/korean-potatoes.jpeg",
+        "image": "/recipe-images/korean-potatoes.jpeg",
         "url": "http://www.food.com/recipe/korean-seasoned-potatoes-44048-51088-51312-390718",
         "yield": 4,
         "dietLabels": [],
@@ -3842,7 +3842,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Oven Baked Mexican Rice recipes",
-        "image": "/src/assets/recipe-images/mexican-rice.jpeg",
+        "image": "/recipe-images/mexican-rice.jpeg",
         "url": "http://keciasflavorbreakthrough.com/oven-baked-mexican-rice/",
         "yield": 4,
         "dietLabels": [],
@@ -4213,7 +4213,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Swedish Pancakes",
-        "image": "/src/assets/recipe-images/swedish-pancakes.jpeg",
+        "image": "/recipe-images/swedish-pancakes.jpeg",
         "url": "http://scratchthiswithsandy.com/2014/01/19/swedish-pancakes/",
         "yield": 6,
         "dietLabels": [
@@ -4505,7 +4505,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Pizza with taleggio, prosciutto and pear",
-        "image": "/src/assets/recipe-images/pizza-pear.jpeg",
+        "image": "/recipe-images/pizza-pear.jpeg",
         "url": "https://www.goodfood.com.au/recipes/pizza-with-taleggio-prosciutto-and-pear-20111018-29wks",
         "yield": 12,
         "dietLabels": [
@@ -4840,7 +4840,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Strawberry Cheesecake recipes",
-        "image": "/src/assets/recipe-images/strawberry-cheesecake.jpeg",
+        "image": "/recipe-images/strawberry-cheesecake.jpeg",
         "url": "http://allrecipes.com/recipe/222588/strawberry-cheesecake/",
         "yield": 12,
         "dietLabels": [],
@@ -5198,7 +5198,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Mushroom and Spinach Ravioli",
-        "image": "/src/assets/recipe-images/spinach-ravioli.jpeg",
+        "image": "/recipe-images/spinach-ravioli.jpeg",
         "url": "http://ourlifetastesgood.blogspot.com/2012/07/mushroom-and-spinach-ravioli-with-chive.html",
         "yield": 2,
         "dietLabels": [
@@ -5656,7 +5656,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Cajun Pork Pinwheels",
-        "image": "/src/assets/recipe-images/cayun-pork-pinwheel.jpeg",
+        "image": "/recipe-images/cayun-pork-pinwheel.jpeg",
         "url": "https://www.bigoven.com/recipe/cajun-pork-pinwheels/158806",
         "yield": 6,
         "dietLabels": [
@@ -6004,7 +6004,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Fire Roasted Tomato Soup recipes",
-        "image": "/src/assets/recipe-images/tomato-soup.jpeg",
+        "image": "/recipe-images/tomato-soup.jpeg",
         "url": "http://therecipecritic.com/2013/02/fire-roasted-tomato-soup/",
         "yield": 8,
         "dietLabels": [
@@ -6375,7 +6375,7 @@ export const data = JSON.parse(`{
     {
       "recipe": {
         "label": "Homemade Sweet Spaghetti Sauce",
-        "image": "/src/assets/recipe-images/sweet-spaghetti-sauce.jpeg",
+        "image": "/recipe-images/sweet-spaghetti-sauce.jpeg",
         "url": "https://www.recipezazz.com/recipe/homemade-sweet-spaghetti-sauce-4752",
         "yield": 8,
         "dietLabels": [],
