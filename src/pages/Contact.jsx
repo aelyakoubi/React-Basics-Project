@@ -68,16 +68,18 @@ const Contact = () => {
   };
 
   // Dynamic colors for Light/Dark Mode
-  const bgColor = useColorModeValue("white", "black");
+  const bgColor = useColorModeValue("gray.50", "gray.800");
+  const containerBg = useColorModeValue("white", "gray.700");
   const textColor = useColorModeValue("black", "white");
-  const containerBg = useColorModeValue("gray.50", "gray.900");
 
   return (
     <Box minHeight="100vh" display="flex" flexDirection="column" bg={bgColor} color={textColor}>
-      <Center flex="1" py={8}>
+      <Center flex={1} py={8}>
         {isAuthenticated ? (
-          <Container maxW={"lg"} bg={containerBg} p={8} boxShadow={"md"} borderRadius={"md"}>
-            <Heading as="h2" size="lg" mb={6} textAlign="center">Contact Us</Heading>
+          <Container maxW="lg" bg={containerBg} p={8} boxShadow="md" borderRadius="md">
+            <Heading as="h2" size="lg" mb={6} textAlign="center">
+              Contact Us
+            </Heading>
             <form onSubmit={handleSubmit}>
               <FormControl isRequired mb={4}>
                 <FormLabel>Name</FormLabel>
@@ -116,17 +118,21 @@ const Contact = () => {
                 />
               </FormControl>
 
-              <Button type="submit" colorScheme="teal" width="full">Send Message</Button>
+              <Button type="submit" colorScheme="teal" width="full" mt={4}>
+                Send Message
+              </Button>
             </form>
 
-            <LogoutButton />
+            <Center mt={4}>
+              <LogoutButton />
+            </Center>
           </Container>
         ) : (
-          <Text fontSize={"lg"}>Please log in to contact us!</Text>
+          <Text fontSize="lg">Please log in to contact us!</Text>
         )}
       </Center>
 
-      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} isCentered>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Login Required</ModalHeader>
@@ -135,8 +141,12 @@ const Contact = () => {
             <Text>You must log in or register before you can send a message.</Text>
           </ModalBody>
           <ModalFooter>
-            <Button colorScheme="teal" onClick={handleLogin}>Log In</Button>
-            <Button variant="ghost" onClick={handleCloseModal}>Close</Button>
+            <Button colorScheme="teal" onClick={handleLogin}>
+              Log In
+            </Button>
+            <Button variant="ghost" onClick={handleCloseModal}>
+              Close
+            </Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
