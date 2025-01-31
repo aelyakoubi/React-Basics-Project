@@ -48,7 +48,7 @@ const Contact = () => {
     const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    emailjs.sendForm(serviceID, templateID, e.target, userID).then(
+    emailjs.sendForm(serviceID, templateID, e.target, publicKey).then(
       (result) => {
         console.log(result.text);
         alert('Message sent successfully!');
