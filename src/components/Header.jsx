@@ -23,10 +23,7 @@ const Header = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
 
   // Get the current color mode for button text
-  const buttonText = useColorModeValue(
-    'Dark Mode',
-    'Light Mode'
-  );
+  const buttonText = useColorModeValue('Dark Mode', 'Light Mode');
 
   // Adjust text size for small screens
   const buttonSize = useBreakpointValue({ base: 'sm', md: 'md' });
@@ -84,7 +81,7 @@ const Header = () => {
         {/* Dark/Light Mode Toggle Button */}
         <Button
           onClick={toggleColorMode}
-          colorScheme='teal'
+          colorScheme='grey'
           variant='outline'
           fontSize={buttonSize} // Responsive font size
         >
