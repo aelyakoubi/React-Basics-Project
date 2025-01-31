@@ -1,20 +1,36 @@
 // src/pages/LoginPage.jsx
-import { Button, Center, Heading, Box } from '@chakra-ui/react';
 import { useAuth0 } from '@auth0/auth0-react';
+import { Box, Button, Center, Heading } from '@chakra-ui/react';
+import Cookies from 'js-cookie';
+import { useEffect } from 'react';
 
 const LoginPage = () => {
-  const { loginWithRedirect } = useAuth0()
+  const { loginWithRedirect, user, isAuthenticated } = useAuth0();
+
+  useEffect(() => {
+    if (isAuthenticated && user) {
+      Cookies.set('user', JSON.stringify(user), { expires: 7 }); // Store user for 7 days
+    }
+  }, [isAuthenticated, user]);
 
   return (
-    <Center h="100vh">
-      <Box p={8} borderWidth={1} borderRadius="md" boxShadow="lg">
+    <Center h='100vh'>
+      <Box p={8} borderWidth={1} borderRadius='md' boxShadow='lg'>
         <Heading mb={6}>Log In</Heading>
-        <Button onClick={() => loginWithRedirect()} colorScheme="teal" size="lg">
-          Log In with Auth0
-        </Button>
+        {!isAuthenticated ? (
+          <Button
+            onClick={() => loginWithRedirect()}
+            colorScheme='teal'
+            size='lg'
+          >
+            Log In with Auth0
+          </Button>
+        ) : (
+          <Heading size='md'>Welcome, {user?.name}!</Heading>
+        )}
       </Box>
     </Center>
   );
-}
+};
 
 export default LoginPage;

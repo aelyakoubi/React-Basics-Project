@@ -63,7 +63,9 @@ const Contact = () => {
   };
 
   const handleLogin = () => {
-    loginWithRedirect();
+    loginWithRedirect({
+      redirectUri: window.location.origin, // This will send the user back to the current page or home after login
+    });
   };
 
   const handleCloseModal = () => {
