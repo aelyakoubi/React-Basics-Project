@@ -1,31 +1,35 @@
+import { useAuth0 } from '@auth0/auth0-react';
 import {
   Box,
-  Text,
+  Button,
+  Center,
+  Container,
   FormControl,
   FormLabel,
-  Input,
-  Textarea,
-  Button,
-  Container,
-  Center,
   Heading,
+  Input,
   Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalCloseButton,
   ModalBody,
+  ModalCloseButton,
+  ModalContent,
   ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  Text,
+  Textarea,
   useColorModeValue,
-} from "@chakra-ui/react";
-import emailjs from "@emailjs/browser";
-import { useState, useEffect } from "react";
-import { useAuth0 } from "@auth0/auth0-react";
-import LogoutButton from "../components/LogoutButton";
+} from '@chakra-ui/react';
+import emailjs from '@emailjs/browser';
+import { useEffect, useState } from 'react';
+import LogoutButton from '../components/LogoutButton';
 
 const Contact = () => {
   const { isAuthenticated, loginWithRedirect } = useAuth0();
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
@@ -42,21 +46,20 @@ const Contact = () => {
     e.preventDefault();
     const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const userID = import.meta.env.VITE_EMAILJS_USER_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    emailjs.sendForm(serviceID, templateID, e.target, userID)
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Message sent successfully!");
-        },
-        (error) => {
-          console.log(error.text);
-          alert("Error sending message.");
-        }
-      );
+    emailjs.sendForm(serviceID, templateID, e.target, userID).then(
+      (result) => {
+        console.log(result.text);
+        alert('Message sent successfully!');
+      },
+      (error) => {
+        console.log(error.text);
+        alert('Error sending message.');
+      }
+    );
 
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ name: '', email: '', message: '' });
   };
 
   const handleLogin = () => {
@@ -68,26 +71,38 @@ const Contact = () => {
   };
 
   // Dynamic colors for Light/Dark Mode
-  const bgColor = useColorModeValue("gray.50", "gray.800");
-  const containerBg = useColorModeValue("white", "gray.700");
-  const textColor = useColorModeValue("black", "white");
+  const bgColor = useColorModeValue('gray.50', 'gray.800');
+  const containerBg = useColorModeValue('white', 'gray.700');
+  const textColor = useColorModeValue('black', 'white');
 
   return (
-    <Box minHeight="100vh" display="flex" flexDirection="column" bg={bgColor} color={textColor}>
+    <Box
+      minHeight='100vh'
+      display='flex'
+      flexDirection='column'
+      bg={bgColor}
+      color={textColor}
+    >
       <Center flex={1} py={8}>
         {isAuthenticated ? (
-          <Container maxW="lg" bg={containerBg} p={8} boxShadow="md" borderRadius="md">
-            <Heading as="h2" size="lg" mb={6} textAlign="center">
+          <Container
+            maxW='lg'
+            bg={containerBg}
+            p={8}
+            boxShadow='md'
+            borderRadius='md'
+          >
+            <Heading as='h2' size='lg' mb={6} textAlign='center'>
               Contact Us
             </Heading>
             <form onSubmit={handleSubmit}>
               <FormControl isRequired mb={4}>
                 <FormLabel>Name</FormLabel>
                 <Input
-                  name="name"
+                  name='name'
                   value={formData.name}
                   onChange={handleInputChange}
-                  placeholder="Your Name"
+                  placeholder='Your Name'
                   bg={bgColor}
                   color={textColor}
                 />
@@ -96,11 +111,11 @@ const Contact = () => {
               <FormControl isRequired mb={4}>
                 <FormLabel>Email</FormLabel>
                 <Input
-                  name="email"
-                  type="email"
+                  name='email'
+                  type='email'
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="Your Email"
+                  placeholder='Your Email'
                   bg={bgColor}
                   color={textColor}
                 />
@@ -109,16 +124,16 @@ const Contact = () => {
               <FormControl isRequired mb={4}>
                 <FormLabel>Message</FormLabel>
                 <Textarea
-                  name="message"
+                  name='message'
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Your Message"
+                  placeholder='Your Message'
                   bg={bgColor}
                   color={textColor}
                 />
               </FormControl>
 
-              <Button type="submit" colorScheme="teal" width="full" mt={4}>
+              <Button type='submit' colorScheme='teal' width='full' mt={4}>
                 Send Message
               </Button>
             </form>
@@ -128,7 +143,7 @@ const Contact = () => {
             </Center>
           </Container>
         ) : (
-          <Text fontSize="lg">Please log in to contact us!</Text>
+          <Text fontSize='lg'>Please log in to contact us!</Text>
         )}
       </Center>
 
@@ -138,13 +153,15 @@ const Contact = () => {
           <ModalHeader>Login Required</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Text>You must log in or register before you can send a message.</Text>
+            <Text>
+              You must log in or register before you can send a message.
+            </Text>
           </ModalBody>
           <ModalFooter>
-            <Button colorScheme="teal" onClick={handleLogin}>
+            <Button colorScheme='teal' onClick={handleLogin}>
               Log In
             </Button>
-            <Button variant="ghost" onClick={handleCloseModal}>
+            <Button variant='ghost' onClick={handleCloseModal}>
               Close
             </Button>
           </ModalFooter>
