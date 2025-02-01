@@ -16,7 +16,7 @@ const Welcome = () => {
         <Heading size='lg'>Welcome back, {user.email}!</Heading>
       ) : (
         <>
-          <Heading size='lg'>Please log in</Heading>
+          <Heading size='lg'>Please log in to see the ingredients</Heading>
           <Button mt={4} colorScheme='teal' onClick={() => loginWithRedirect()}>
             Log In Secured with Auth0
           </Button>
