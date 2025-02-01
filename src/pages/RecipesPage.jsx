@@ -1,22 +1,17 @@
-import { useAuth0 } from '@auth0/auth0-react';
 import { Center, Flex, Heading } from '@chakra-ui/react';
-import { useEffect, useState } from 'react';
-import { RecipeChoice } from '../components/RecipeChoice';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { RecipeSearch } from '../components/RecipeSearch';
 import Welcome from '../components/Welcome';
 
 const RecipesPage = () => {
-  const [userRecipe, setUserRecipe] = useState();
-  const { isAuthenticated, user } = useAuth0(); // Directly using Auth0 hook
+  const [userRecipe, setUserRecipe] = useState(null);
   const greeting = 'Welcome to Max Recipe Checker!';
+  const navigate = useNavigate();
 
-  // Add a useEffect to update the state when isAuthenticated changes
-  useEffect(() => {
-    // Here, you can perform logic like fetching user-related data after they log in
-    if (isAuthenticated) {
-      console.log('User is authenticated:', user);
-    }
-  }, [isAuthenticated, user]); // Dependencies to trigger when authentication changes
+  const handleRecipeClick = (recipe) => {
+    navigate('/recipe-choice-page', { state: { recipe } }); // ✅ Correct route format
+  };
 
   return (
     <Flex
@@ -25,17 +20,21 @@ const RecipesPage = () => {
       justify='center'
       minHeight='100vh'
       width='100%'
-      px={['2', '4', '8']} // responsive padding
+      px={['2', '4', '8']} // Responsive padding
     >
+      {/* Welcome component will display a greeting or login prompt */}
       <Welcome />
-      {isAuthenticated && userRecipe ? (
-        <RecipeChoice recipe={userRecipe} onClick={setUserRecipe} />
+
+      {userRecipe ? (
+        // ✅ Only navigate onClick instead of calling function directly in JSX
+        handleRecipeClick(userRecipe)
       ) : (
         <>
           <Heading size={['xl', '2xl', '3xl']} mb={8} color='blue.200'>
             <Center>{greeting}</Center>
           </Heading>
 
+          {/* ✅ Only render RecipeSearch once */}
           <RecipeSearch onClick={setUserRecipe} />
         </>
       )}

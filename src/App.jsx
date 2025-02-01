@@ -1,8 +1,8 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'; // React Router
+import { BrowserRouter as Router } from 'react-router-dom'; // React Router
 import Auth0ProviderWrapper from '../Auth0ProviderWrapper';
-import { routesConfig } from '../routes'; // Adjusted import
-import Layout from '../src/Layout';
+import RoutesConfig from '../routes'; // Updated import to RoutesConfig
+import Layout from '../src/Layout'; // Adjust the import if needed
 
 // Custom theme to enable dark mode support
 const theme = extendTheme({
@@ -18,12 +18,7 @@ const App = () => {
       <Auth0ProviderWrapper>
         <Router>
           <Layout>
-            <Routes>
-              {routesConfig.map(({ path, component: Component }, index) => (
-                // Wrap the component in JSX syntax: <Component />
-                <Route key={index} path={path} element={<Component />} />
-              ))}
-            </Routes>
+            <RoutesConfig /> {/* Use the new RoutesConfig component */}
           </Layout>
         </Router>
       </Auth0ProviderWrapper>

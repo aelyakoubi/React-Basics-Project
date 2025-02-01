@@ -1,6 +1,7 @@
+// src/components/RecipeChoice.jsx
 import { Center, Heading, Image, Text } from '@chakra-ui/react';
 
-export const RecipeChoice = ({ recipe, onClick }) => {
+const RecipeChoice = ({ recipe }) => {
   return (
     <Center
       gap='1'
@@ -70,3 +71,5 @@ export const RecipeChoice = ({ recipe, onClick }) => {
     </Center>
   );
 };
+
+export default RecipeChoice;
