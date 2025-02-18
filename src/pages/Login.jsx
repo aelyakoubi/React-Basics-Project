@@ -4,7 +4,7 @@ import { Box, Button, Center, Heading } from '@chakra-ui/react';
 import Cookies from 'js-cookie';
 import { useEffect } from 'react';
 
-const LoginPage = () => {
+const Login = () => {
   const { loginWithRedirect, user, isAuthenticated } = useAuth0();
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const LoginPage = () => {
             colorScheme='teal'
             size='lg'
           >
-            Log In with Auth0
+            To be able to view this page !
           </Button>
         ) : (
           <Heading size='md'>Welcome, {user?.name}!</Heading>
@@ -33,4 +33,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;

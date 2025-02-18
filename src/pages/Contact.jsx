@@ -8,13 +8,6 @@ import {
   FormLabel,
   Heading,
   Input,
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
   Text,
   Textarea,
   useColorModeValue,
@@ -148,27 +141,6 @@ const Contact = () => {
           <Text fontSize='lg'>Please log in to contact us!</Text>
         )}
       </Center>
-
-      <Modal isOpen={isModalOpen} onClose={handleCloseModal} isCentered>
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>Login Required</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <Text>
-              You must log in or register before you can send a message.
-            </Text>
-          </ModalBody>
-          <ModalFooter>
-            <Button colorScheme='teal' onClick={handleLogin}>
-              Log In
-            </Button>
-            <Button variant='ghost' onClick={handleCloseModal}>
-              Close
-            </Button>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
     </Box>
   );
 };

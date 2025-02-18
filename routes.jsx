@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom'; // Correct import for react-ro
 import ProtectedRoute from './src/components/ProtectedRoute'; // Corrected path for ProtectedRoute
 import About from './src/pages/About'; // Corrected path for About
 import Contact from './src/pages/Contact'; // Corrected path for Contact
-import LoginPage from './src/pages/LoginPage'; // Corrected path for LoginPage
+import Login from './src/pages/Login'; // Corrected path for Login
 import Privacy from './src/pages/Privacy'; // Corrected path for Privacy
 import RecipeChoicePage from './src/pages/RecipeChoicePage'; // Corrected path for RecipeChoicePage
 import RecipesPage from './src/pages/RecipesPage'; // Corrected path for RecipesPage
@@ -14,7 +14,7 @@ const RoutesConfig = () => {
       {/* Public routes */}
       <Route path='/' element={<RecipesPage />} />
       <Route path='/about' element={<About />} />
-      <Route path='/login' element={<LoginPage />} />
+      <Route path='/login' element={<Login />} />
       <Route path='/terms' element={<Terms />} />
       <Route path='/privacy' element={<Privacy />} />
 

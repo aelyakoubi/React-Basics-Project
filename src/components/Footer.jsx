@@ -13,27 +13,34 @@ const Footer = () => {
   const isSmallScreen = useBreakpointValue({ base: true, md: false });
 
   return (
-    <Box
-      as='footer'
-      bg='teal.500'
-      color='white'
-      p={4}
-      position='relative'
-      bottom={0}
-      width='100%'
-    >
+    <Box as='footer' bg='teal.500' color='white' p={4} width='100%'>
+      {/* Website Name in Separate Box */}
+      <Box textAlign='center' mb={2} p={2} bg='teal.600' borderRadius='md'>
+        <Text
+          fontSize={isSmallScreen ? 'md' : 'lg'}
+          fontWeight='bold'
+          userSelect='none' // Disable text selection to protect against copying
+        >
+          {/* Clickable Website Name */}
+          <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>
+            Max Recipe Checker © 2025
+          </Link>
+        </Text>
+      </Box>
+
       <Flex
         direction={isSmallScreen ? 'column' : 'row'}
         justify='space-between'
         align='center'
-        wrap='wrap' // Ensures content wraps correctly on small screens
+        wrap='wrap'
       >
-        <Text fontSize={isSmallScreen ? 'sm' : 'md'}>
-          Max Recipe Checker © 2025
-        </Text>
-
         {/* Navigation Links in Footer */}
-        <HStack spacing={4} justify='center' wrap='wrap'>
+        <HStack
+          spacing={4}
+          justify='center'
+          wrap='wrap'
+          mb={isSmallScreen ? 3 : 0}
+        >
           <Button
             as={Link}
             to='/terms'
