@@ -14,20 +14,6 @@ const Footer = () => {
 
   return (
     <Box as='footer' bg='teal.500' color='white' p={4} width='100%'>
-      {/* Website Name in Separate Box */}
-      <Box textAlign='center' mb={2} p={2} bg='teal.600' borderRadius='md'>
-        <Text
-          fontSize={isSmallScreen ? 'md' : 'lg'}
-          fontWeight='bold'
-          userSelect='none' // Disable text selection to protect against copying
-        >
-          {/* Clickable Website Name */}
-          <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>
-            Max Recipe Checker © 2025
-          </Link>
-        </Text>
-      </Box>
-
       <Flex
         direction={isSmallScreen ? 'column' : 'row'}
         justify='space-between'
@@ -73,6 +59,20 @@ const Footer = () => {
         {/* Social Icons */}
         <SocialIcons />
       </Flex>
+
+      {/* Website Name in Separate Box */}
+      <Box textAlign='center' mb={2} p={2} bg='teal.600' borderRadius='md'>
+        <Text
+          fontSize={isSmallScreen ? 'md' : 'lg'}
+          fontWeight='bold'
+          userSelect='none' // Disable text selection to protect against copying
+        >
+          {/* Clickable Website Name */}
+          <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>
+            Max Recipe Checker © 2025
+          </Link>
+        </Text>
+      </Box>
     </Box>
   );
 };
