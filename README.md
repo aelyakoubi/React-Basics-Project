@@ -1,78 +1,152 @@
-# Professional React Project Starter
+# Recipe App — React Basics Project
 
-A minimal and clean React project template built with Chakra UI, without using any external CSS.
+A responsive recipe browsing app built with React, Vite, and Chakra UI.
+Features Auth0 authentication, protected routes, a contact form via EmailJS, and dark/light mode support.
 
 ---
 
-## Overview
+## Live Demo
 
-This project is a foundational template for React applications that leverages **Chakra UI** for styling, ensuring a consistent, modern, and fully responsive design—all without using CSS files.
+- [Visit the Application](https://react-basics-project-a.netlify.app/)
+
+---
+
+## Tech Stack
+
+- React 18
+- Vite
+- React Router DOM
+- Chakra UI (component-based styling, no custom CSS)
+- Auth0 (authentication)
+- EmailJS (contact form)
+- Framer Motion (animations)
+- React Icons
+- ESLint + Prettier
 
 ---
 
 ## Features
-- **Framework:** React  
-- **Styling:** Chakra UI for component-based styling (no external or custom CSS used)  
-- **Languages:** JavaScript, HTML  
-- **Build Tool:** Vite for fast and efficient builds  
+
+- Browse and search recipes
+- Filter recipes by health labels and diet labels
+- Protected routes — contact page and recipe detail require login
+- Auth0 login/logout
+- Contact form powered by EmailJS
+- Light/dark mode support via Chakra UI
+- Fully responsive layout
 
 ---
 
-## Prerequisites
-Ensure the following are installed on your system:  
-- **Node.js** (LTS version recommended)  
-- **npm** (comes bundled with Node.js)  
-- **Code Editor:** Visual Studio Code  
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/aelyakoubi/React-Basics-Project.git
+cd React-Basics-Project
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_AUTH0_DOMAIN=your_auth0_domain_here
+VITE_AUTH0_CLIENT_ID=your_auth0_client_id_here
+VITE_EMAILJS_SERVICE_ID=your_emailjs_service_id_here
+VITE_EMAILJS_TEMPLATE_ID=your_emailjs_template_id_here
+VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key_here
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+App runs on `http://localhost:5173`
+
+### 5. Build for production
+
+```bash
+npm run build
+```
 
 ---
 
-## Setup Instructions
+## Pages & Routes
 
-1. **Clone the Repository**  
-   Clone this repository to your local system:  
-   ```bash
-   git clone <repository-url>
+| Route                 | Page             | Access    |
+| --------------------- | ---------------- | --------- |
+| `/`                   | Recipes overview | Public    |
+| `/about`              | About            | Public    |
+| `/login`              | Login            | Public    |
+| `/terms`              | Terms            | Public    |
+| `/privacy`            | Privacy          | Public    |
+| `/contact`            | Contact form     | Protected |
+| `/recipe-choice-page` | Recipe detail    | Protected |
 
-Navigate to the Project Folder
-Change your working directory to the project folder: cd react-project-starter
 ---
 
-Install Dependencies
-Install all required dependencies using: npm install
+## Project Structure
+
+```
+├── src/
+│   ├── assets/
+│   │   └── recipe-images/         # Recipe images
+│   ├── auth/
+│   │   └── auth0-config.js        # Auth0 configuration
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── Button.jsx
+│   │   │   └── TextInput.jsx
+│   │   ├── ContacForm.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── LogoutButton.jsx
+│   │   ├── ProtectedRoute.jsx
+│   │   ├── RecipeChoice.jsx
+│   │   ├── RecipeItem.jsx
+│   │   ├── RecipeItems.jsx
+│   │   ├── RecipeSearch.jsx
+│   │   ├── SocialIcons.jsx
+│   │   └── Welcome.jsx
+│   ├── pages/
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Login.jsx
+│   │   ├── Privacy.jsx
+│   │   ├── RecipeChoicePage.jsx
+│   │   ├── RecipesPage.jsx
+│   │   └── Terms.jsx
+│   ├── utils/
+│   │   └── data.js                # Recipe data
+│   ├── App.jsx
+│   ├── Layout.jsx
+│   └── main.jsx
+├── public/
+│   └── recipe-images/             # Public recipe images
+├── Auth0ProviderWrapper.jsx        # Auth0 provider setup
+├── routes.jsx                     # Route configuration
+├── index.html
+├── vite.config.js
+├── .eslintrc.json
+├── .prettierrc
+└── package.json
+```
+
 ---
 
-Run the Development Server
-Start the development server with: npm run dev
----
+## Screenshots
 
-Open your browser and navigate to: http://localhost:5173
----
-
-Build the Project
-To build the project for production, use: npm run build
----
-
-Demo Video
-- [Watch the full demo on YouTube](https://youtu.be/nOPFzUtAkTc)  
-- For a quick preview, click the short demo video file below:  
----
-
-https://github.com/user-attachments/assets/565f382d-380d-4a36-b01a-8a881e57a3a6
-
-
-
-![Screenshot 2025-01-25 163422](https://github.com/user-attachments/assets/86a5a7d8-dcc9-41c4-bc96-d291b5bb6c29)
-
-![Screenshot 2025-01-25 163438](https://github.com/user-attachments/assets/a4d225ec-49fe-4acf-8f1e-6865ff5cc0d1)
-
-![Screenshot 2025-01-25 163450](https://github.com/user-attachments/assets/daa8a371-5519-4b04-892d-5f8bae4118c1)
-
-![Screenshot 2025-01-25 163531](https://github.com/user-attachments/assets/2845580b-c2ac-4a06-9a48-8de0f6f7cee8)
-
-![Screenshot 2025-01-25 163608](https://github.com/user-attachments/assets/ba884d7f-4e5c-4068-b161-8a3be972a094)
-
-![Screenshot 2025-01-25 163638](https://github.com/user-attachments/assets/4a50479b-bb31-47bb-9f10-2776c1dd7f99)
-
-![Screenshot 2025-01-25 163708](https://github.com/user-attachments/assets/87742164-08ef-491e-a80b-d8f8c8d4460d)
-
-![Screenshot 2025-01-25 163722](https://github.com/user-attachments/assets/5df60970-dd19-4f43-a387-c5b9b982706d)
+![Screenshot 1](https://github.com/user-attachments/assets/86a5a7d8-dcc9-41c4-bc96-d291b5bb6c29)
+![Screenshot 2](https://github.com/user-attachments/assets/a4d225ec-49fe-4acf-8f1e-6865ff5cc0d1)
+![Screenshot 3](https://github.com/user-attachments/assets/daa8a371-5519-4b04-892d-5f8bae4118c1)
+![Screenshot 4](https://github.com/user-attachments/assets/2845580b-c2ac-4a06-9a48-8de0f6f7cee8)
+![Screenshot 5](https://github.com/user-attachments/assets/6e6b0a6e-7a21-4da8-a01d-ba88b38c3ead)
